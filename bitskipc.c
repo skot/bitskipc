@@ -70,7 +70,12 @@ int main(int argc, char **argv) {
             f = ftdi_read_data(ftdi, buf, sizeof(buf));
         if (f<0) {
             usleep(1 * 1000000);
-        } else if (f> 0) {
+        } else if (f > 0) {
+            if (buf[0] == 'U') {
+                ftdi_setrts(ftdi, 1);
+            } else if (buf[0] == 'D') {
+                ftdi_setrts(ftdi, 0);
+            }
             //fprintf(stderr, "read %d bytes\n", f);
             fwrite(buf, f, 1, stdout);
             fflush(stderr);

@@ -1,7 +1,7 @@
 /* bitskipc.c
  
    Bitskipc - an implementation of Bitskip in C.
-   Bitskip is a simple ASIC miner
+   Bitskip is a simple ASIC miner using FTDI usbserial
 */
  
 #include <stdio.h>
@@ -12,24 +12,35 @@
 #include <ftdi.h>
 
 #include "serial_monitor.h"
+#include "pretty.h"
+#include "bm1397.h"
 
 int main(int argc, char **argv) {
     struct ftdi_context *ftdi;
+    uint8_t buf[1024];
+    uint16_t len;
 
+    //open serial port
     ftdi = open_serial();
-
     if (ftdi == NULL) {
         fprintf(stderr, "Failed to open serial port\\n");
         return -1;
     }
 
-    pthread_t thread;
+    while(1) {
+        send_chippy(ftdi);
 
-    // Start the serial thread
-    pthread_create(&thread, NULL, serial_thread, ftdi);
+        //read back data
+        len = serial_thread(ftdi, buf);
 
-    // Wait for the thread to finish
-    pthread_join(thread, NULL);
+        if (len < 0) {
+            fprintf(stderr, "Failed to read serial port\n");
+            return -1;
+        } else {
+            prettyHex(buf, len);
+            printf("(%d)\n", len);
+        }
+    }
 
     return 0;
 

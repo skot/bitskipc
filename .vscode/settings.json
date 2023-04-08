@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "unistd.h": "c",
-        "serial_monitor.h": "c"
+        "serial_monitor.h": "c",
+        "ftdi.h": "c"
     }
 }

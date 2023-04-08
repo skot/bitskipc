@@ -1,7 +1,10 @@
 #ifndef SERIAL_MONITOR_H_
 #define SERIAL_MONITOR_H_
 
-void *serial_thread(void *arg);
+#include <ftdi.h>
+
+int16_t serial_thread(struct ftdi_context *ftdi, uint8_t * buf);
 struct ftdi_context * open_serial(void);
+int write_data(struct ftdi_context *, const unsigned char *, int);
 
 #endif // SERIAL_MONITOR_H_

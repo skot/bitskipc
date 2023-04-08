@@ -68,7 +68,7 @@ error:
 /// @param ftdi open ftdi context  
 /// @param buf bufffer to read data into
 /// @return number of bytes read, or -1 on error
-int16_t serial_thread(struct ftdi_context *ftdi, uint8_t * buf) {
+int16_t serial_rx(struct ftdi_context *ftdi, uint8_t * buf) {
     int ret;
     uint16_t timeout = 0;
 

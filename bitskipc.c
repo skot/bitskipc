@@ -27,20 +27,21 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-    while(1) {
-        send_chippy(ftdi);
 
-        //read back data
-        len = serial_thread(ftdi, buf);
+    send_chippy(ftdi);
 
-        if (len < 0) {
-            fprintf(stderr, "Failed to read serial port\n");
-            return -1;
-        } else {
-            prettyHex(buf, len);
-            printf("(%d)\n", len);
-        }
+    //read back data
+    len = serial_rx(ftdi, buf);
+
+    if (len < 0) {
+        fprintf(stderr, "Failed to read serial port\n");
+        return -1;
+    } else if (len > 0) {
+        prettyHex(buf, len);
+        printf("(%d)\n", len);
     }
+
+    send_init(ftdi);
 
     return 0;
 

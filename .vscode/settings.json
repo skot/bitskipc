@@ -2,6 +2,11 @@
     "files.associations": {
         "unistd.h": "c",
         "serial_monitor.h": "c",
-        "ftdi.h": "c"
+        "ftdi.h": "c",
+        "__string": "c",
+        "atomic": "c",
+        "cstring": "c",
+        "memory": "c",
+        "utility": "c"
     }
 }

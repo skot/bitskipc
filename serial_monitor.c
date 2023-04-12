@@ -6,6 +6,7 @@
 #include <ftdi.h>
 
 #include "pretty.h"
+#include "serial_monitor.h"
 
 #define FTDI_VID 0x0403
 #define FTDI_PID 0x6015
@@ -39,6 +40,8 @@ struct ftdi_context * open_serial(void) {
     if (ret < 0) {
         fprintf(stderr, "unable to open device: %d (%s)\n", ret, ftdi_get_error_string(ftdi));
         goto error;
+    } else {
+        printf("Opened USB device %04x:%04x\n", FTDI_VID, FTDI_PID);
     }
 
     // Set the baud rate
@@ -52,6 +55,12 @@ struct ftdi_context * open_serial(void) {
     ret = ftdi_set_line_property(ftdi, BITS_8, STOP_BIT_1, NONE);
     if (ret < 0) {
         fprintf(stderr, "unable to set line property: %d (%s)\n", ret, ftdi_get_error_string(ftdi));
+        goto error;
+    }
+
+    ret = ftdi_read_data_set_chunksize(ftdi, 1024);
+    if (ret < 0) {
+        fprintf(stderr, "unable to set chunk size: %d (%s)\n", ret, ftdi_get_error_string(ftdi));
         goto error;
     }
 
@@ -74,7 +83,7 @@ int16_t serial_rx(struct ftdi_context *ftdi, uint8_t * buf) {
 
     // Start reading data from the device
     while (timeout < SERIAL_RX_TIME_MS) {
-        ret = ftdi_read_data(ftdi, buf, sizeof(buf));
+        ret = ftdi_read_data(ftdi, buf, CHUNK_SIZE);
         if (ret < 0) {
             fprintf(stderr, "unable to read data: %d (%s)\n", ret, ftdi_get_error_string(ftdi));
             return -1;

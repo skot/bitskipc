@@ -2,6 +2,6 @@ First attempt at a new BM1397 driver. Mostly based off [kano's cgminer](https://
 
 Massive help from @Georges760 [BM1397 register documentation](https://github.com/skot/BM1397/blob/master/registers.md) effort
 
-This uses [libftdi](https://www.intra2net.com/en/developer/libftdi/) to communicate with a [FTDI FT230X](https://ftdichip.com/products/ft230xq/). I have had good luck with the [jim.sh micro1v8](https://jim.sh/1v8/) adapter, but you need to [modify cgminer](https://github.com/skot/cgminer) to use RTS for reset instead of CBUS0. 
+This uses [libftdi](https://www.intra2net.com/en/developer/libftdi/) to communicate with a [FTDI FT230X](https://ftdichip.com/products/ft230xq/). I have had good luck with the [jim.sh micro1v8](https://jim.sh/1v8/) adapter, but any 1.8V FTDI adapter could work as long as it has the RTS pin broken out.
 
 1.8V IO voltage is very important when interfacing with the BM1397.

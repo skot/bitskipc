@@ -18,8 +18,8 @@
 
 int main(int argc, char **argv) {
     struct ftdi_context *ftdi;
-    uint8_t buf[CHUNK_SIZE];
-    uint16_t len;
+    // uint8_t buf[CHUNK_SIZE];
+    // uint16_t len;
 
     //open serial port
     ftdi = open_serial();
@@ -28,37 +28,23 @@ int main(int argc, char **argv) {
         return -1;
     }
 
+    //toggle reset
+    ftdi_setrts(ftdi, 1);
+    msleep(200);
     ftdi_setrts(ftdi, 0);
+    msleep(200);
 
     send_read_address(ftdi);
 
     //read back data
-    len = serial_rx(ftdi, buf);
-
-    if (len < 0) {
-        fprintf(stderr, "Failed to read serial port\n");
-        return -1;
-    } else if (len > 0) {
-        prettyHex(buf, len);
-        printf("(%d)\n", len);
-    }
+    debug_serial_rx(ftdi);
 
     send_init(ftdi);
-
-    memset(buf, 0, 1024);
 
     send_work(ftdi);
 
     while (1) {
-        len = serial_rx(ftdi, buf);
-
-        if (len < 0) {
-            fprintf(stderr, "Failed to read serial port\n");
-            return -1;
-        } else if (len > 0) {
-            prettyHex(buf, len);
-            printf("(%d)\n", len);
-        }
+        debug_serial_rx(ftdi);
     }
 
     ftdi_setrts(ftdi, 1);

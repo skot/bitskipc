@@ -8,5 +8,6 @@
 int16_t serial_rx(struct ftdi_context *ftdi, uint8_t * buf);
 struct ftdi_context * open_serial(void);
 int write_data(struct ftdi_context *, const unsigned char *, int);
+void debug_serial_rx(struct ftdi_context *ftdi);
 
 #endif // SERIAL_MONITOR_H_

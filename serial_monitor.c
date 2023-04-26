@@ -4,6 +4,7 @@
 #include <pthread.h>
 #include <signal.h>
 #include <ftdi.h>
+#include <string.h>
 
 #include "pretty.h"
 #include "serial_monitor.h"
@@ -166,5 +167,26 @@ int write_data(struct ftdi_context *ftdi, const unsigned char *buf, int len) {
 
     fprintf(stderr, "timed out waiting for data to be sent\n");
     return -1;
+}
+
+
+void debug_serial_rx(struct ftdi_context *ftdi) {
+    int ret;
+    uint8_t buf[CHUNK_SIZE];
+
+    ret = serial_rx(ftdi, buf);
+    if (ret < 0) {
+        fprintf(stderr, "unable to read data: %d (%s)\n", ret, ftdi_get_error_string(ftdi));
+        return;
+    }
+
+    if (ret > 0) {
+        printf("<-");
+        prettyHex(buf, ret);
+        printf("\n");
+    }
+
+    memset(buf, 0, 1024);
+
 }
 

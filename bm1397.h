@@ -14,6 +14,11 @@
 #define CMD_READ 0x02
 #define CMD_INACTIVE 0x03
 
+typedef enum {
+  JOB_PACKET = 0, 
+  CMD_PACKET = 1,
+} packet_type_t;
+
 void send_read_address(struct ftdi_context *ftdi);
 void send_init(struct ftdi_context *ftdi);
 void send_work(struct ftdi_context *ftdi);

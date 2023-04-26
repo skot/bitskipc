@@ -5,29 +5,62 @@
 
 #include "serial_monitor.h"
 #include "pretty.h"
+#include "bm1397.h"
 
 #define SLEEP_TIME 20
 
+/* compute crc5 over given number of bytes */
+//adapted from https://mightydevices.com/index.php/2018/02/reverse-engineering-antminer-s1/
+uint8_t crc5(uint8_t * data, uint8_t len) {
+	uint8_t i, j, k, index = 0;
+	uint8_t crc = 0x1f;
+	/* registers */
+	uint8_t crcin[5] = {1, 1, 1, 1, 1};
+	uint8_t crcout[5] = {1, 1, 1, 1, 1};
+	uint8_t din = 0;
+
+    len *= 8;
+
+	/* push data bits */
+	for (j = 0x80, k = 0, i = 0; i < len; i++) {
+		/* input bit */
+		din = (data[index] & j) != 0;
+		/* shift register */
+		crcout[0] = crcin[4] ^ din;
+		crcout[1] = crcin[0];
+		crcout[2] = crcin[1] ^ crcin[4] ^ din;
+		crcout[3] = crcin[2];
+		crcout[4] = crcin[3];
+		/* next bit */
+		j >>= 1, k++;
+		/* next byte */
+		if (k == 8)
+			j = 0x80, k = 0, index++;
+		/* apply new shift register value */
+        memcpy(crcin, crcout, 5);
+		//crcin = crcout[0];
+	}
+
+	crc = 0;
+	/* extract bitmask from register */
+	if (crcin[4]) crc |= 0x10;
+	if (crcin[3]) crc |= 0x08;
+	if (crcin[2]) crc |= 0x04;
+	if (crcin[1]) crc |= 0x02;
+	if (crcin[0]) crc |= 0x01;
+
+	return crc;
+}
 
 int send_serial(struct ftdi_context *ftdi, unsigned char *buf, int len) {
     int ret;
 
-    unsigned char *buf2 = malloc(len+3);
-
-    //add the preamble
-    buf2[0] = 0x55;
-    buf2[1] = 0xAA;
-    memcpy(buf2+2, buf, len);
-
-    len += 2;
-
     printf("->");
-    prettyHex(buf2, len);
+    prettyHex(buf, len);
     printf("\n");
     
     //write the data to the serial port
-    ret = ftdi_write_data(ftdi, buf2, len);
-    free(buf2);
+    ret = ftdi_write_data(ftdi, buf, len);
 
     if (ret < 0) {
         fprintf(stderr, "ftdi_write_data failed, error %d (%s)", ret, ftdi_get_error_string(ftdi));
@@ -36,50 +69,111 @@ int send_serial(struct ftdi_context *ftdi, unsigned char *buf, int len) {
     return ret;
 }
 
-void send_chippy(struct ftdi_context *ftdi) {
+/// @brief 
+/// @param ftdi 
+/// @param header 
+/// @param data 
+/// @param len 
+void send_BM1397(struct ftdi_context *ftdi, uint8_t header, uint8_t * data, uint8_t data_len) {
+    //allocate memory for buffer
+    unsigned char *buf = malloc(data_len+5);
 
-    unsigned char chippy[5] = {0x52, 0x05, 0x00, 0x00, 0x0A};
+    //add the preamble
+    buf[0] = 0x55;
+    buf[1] = 0xAA;
+
+    //add the header
+    buf[2] = header;
+
+    //add the length
+    buf[3] = data_len+3;
+
+    //add the data
+    memcpy(buf+4, data, data_len);
+
+    //add the crc
+    buf[4+data_len] = crc5(buf+2, data_len+2);
+
     //send serial data
-    send_serial(ftdi, chippy, 5);
+    send_serial(ftdi, buf, data_len+5);
+
+    free(buf);
 }
+
+void send_read_address(struct ftdi_context *ftdi) {
+
+    // 52 is a Read Register to ALL chip in the chain (0x42 means Read Register and 0x10 means to ALL chip in the chain)
+    // 05 is the frame length (we are in VIL mode) premable excluded
+    // 00 is the chipAddr (0 because we send the command to ALL)
+    // 00 is the Register Address we want to read, in this case 0 means ChipAddress)
+
+    unsigned char read_address[2] = {0x00, 0x00};
+    //send serial data
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_READ), read_address, 2);
+}
+
+void send_chain_inactive(struct ftdi_context *ftdi) {
+
+    unsigned char read_address[2] = {0x00, 0x00};
+    //send serial data
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_INACTIVE), read_address, 2);
+}
+
+void set_chip_address(struct ftdi_context *ftdi, uint8_t chipAddr) {
+
+    unsigned char read_address[2] = {chipAddr, 0x00};
+    //send serial data
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_SINGLE | CMD_SETADDRESS), read_address, 2);
+}
+
+
 
 void send_init(struct ftdi_context *ftdi) {
 
-    unsigned char chain_inactive[5] = {0x53, 0x05, 0x00, 0x00, 0x03};
     //send serial data
     msleep(SLEEP_TIME);
-    send_serial(ftdi, chain_inactive, 5);
-    send_serial(ftdi, chain_inactive, 5);
-    send_serial(ftdi, chain_inactive, 5);
+    send_chain_inactive(ftdi);
 
-    unsigned char chippy2[5] = {0x40, 0x05, 0x00, 0x00, 0x1C};
-    send_serial(ftdi, chippy2, 5);
-    unsigned char init[9] = {0x51, 0x09, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0x1C}; //init1 - clock_order_control0
-    send_serial(ftdi, init, 9);
-    unsigned char init2[9] = {0x51, 0x09, 0x00, 0x84, 0x00, 0x00, 0x00, 0x00, 0x11}; //init2 - clock_order_control1
-    send_serial(ftdi, init2, 9);
-    unsigned char init3[9] = {0x51, 0x09, 0x00, 0x20, 0x00, 0x00, 0x00, 0x01, 0x02}; //init3 - ordered_clock_enable
-    send_serial(ftdi, init3, 9);
-    unsigned char init4[9] = {0x51, 0x09, 0x00, 0x3C, 0x80, 0x00, 0x80, 0x74, 0x10}; //init4 - init_4_?
-    send_serial(ftdi, init4, 9);
-    unsigned char set_ticket[9] = {0x51, 0x09, 0x00, 0x14, 0x00, 0x00, 0x00, 0x00, 0x1C}; //set_ticket - ticket_mask
-    send_serial(ftdi, set_ticket, 9);
-    unsigned char init5[9] = {0x51, 0x09, 0x00, 0x68, 0xC0, 0x70, 0x01, 0x11, 0x00}; //init5 - pll3_parameter
-    send_serial(ftdi, init5, 9);
-    unsigned char init5_2[9] = {0x51, 0x09, 0x00, 0x68, 0xC0, 0x70, 0x01, 0x11, 0x00}; //init5 - pll3_parameter
-    send_serial(ftdi, init5_2, 9);
-    unsigned char init6[9] = {0x51, 0x09, 0x00, 0x28, 0x06, 0x00, 0x00, 0x0F, 0x18}; //init6 - fast_uart_configuration
-    send_serial(ftdi, init6, 9);
-    unsigned char baudrate[9] = {0x51, 0x09, 0x00, 0x18, 0x00, 0x00, 0x7A, 0x31, 0x15}; //baudrate - misc_control
-    send_serial(ftdi, baudrate, 9);
-    unsigned char prefreq1[9] = {0x51, 0x09, 0x00, 0x70, 0x0F, 0x0F, 0x0F, 0x00, 0x19}; //prefreq - pll0_divider
-    send_serial(ftdi, prefreq1, 9);
-    unsigned char prefreq2[9] = {0x51, 0x09, 0x00, 0x70, 0x0F, 0x0F, 0x0F, 0x00, 0x19}; //prefreq - pll0_divider
-    send_serial(ftdi, prefreq2, 9);
-    unsigned char freqbuf[9] = {0x51, 0x09, 0x00, 0x08, 0x40, 0xA0, 0x02, 0x25, 0x16}; //freqbuf - pll0_parameter
-    send_serial(ftdi, freqbuf, 9);
-    unsigned char freqbuf2[9] = {0x51, 0x09, 0x00, 0x08, 0x40, 0xA0, 0x02, 0x25, 0x16}; //freqbuf - pll0_parameter
-    send_serial(ftdi, freqbuf2, 9);
+    set_chip_address(ftdi, 0x00);
+
+    unsigned char init[6] = {0x00, 0x80, 0x00, 0x00, 0x00, 0x00}; //init1 - clock_order_control0
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init, 6);
+
+    unsigned char init2[6] = {0x00, 0x84, 0x00, 0x00, 0x00, 0x00}; //init2 - clock_order_control1
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init2, 6);
+
+    unsigned char init3[9] = {0x00, 0x20, 0x00, 0x00, 0x00, 0x01}; //init3 - ordered_clock_enable
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init3, 6);
+
+    unsigned char init4[9] = {0x00, 0x3C, 0x80, 0x00, 0x80, 0x74}; //init4 - init_4_?
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init4, 6);
+
+    unsigned char set_ticket[9] = {0x00, 0x14, 0x00, 0x00, 0x00, 0x00}; //set_ticket - ticket_mask
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), set_ticket, 6);
+
+    unsigned char init5[9] = {0x00, 0x68, 0xC0, 0x70, 0x01, 0x11}; //init5 - pll3_parameter
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init5, 6);
+
+    unsigned char init5_2[9] = {0x00, 0x68, 0xC0, 0x70, 0x01, 0x11}; //init5_2 - pll3_parameter
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init5_2, 6);
+
+    unsigned char init6[9] = {0x00, 0x28, 0x06, 0x00, 0x00, 0x0F}; //init6 - fast_uart_configuration
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init6, 6);
+
+    unsigned char baudrate[9] = {0x00, 0x18, 0x00, 0x00, 0x7A, 0x31}; //baudrate - misc_control
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), baudrate, 6);
+
+    unsigned char prefreq1[9] = {0x00, 0x70, 0x0F, 0x0F, 0x0F, 0x00}; //prefreq - pll0_divider
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), prefreq1, 6);
+
+    unsigned char prefreq2[9] = {0x00, 0x70, 0x0F, 0x0F, 0x0F, 0x00}; //prefreq - pll0_divider
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), prefreq2, 6);
+
+    unsigned char freqbuf[9] = {0x00, 0x08, 0x40, 0xA0, 0x02, 0x25}; //freqbuf - pll0_parameter
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), freqbuf, 6);
+
+    unsigned char freqbuf2[9] = {0x00, 0x08, 0x40, 0xA0, 0x02, 0x25}; //freqbuf - pll0_parameter
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), freqbuf2, 6);
     
 }
 

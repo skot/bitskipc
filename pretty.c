@@ -10,6 +10,8 @@
 void prettyHex(unsigned char * buf, int len) {
     int i;
     for (i = 0; i < len; i++) {
+        if ((i > 0) && (buf[i] == 0xAA) && (buf[i+1] == 0x55))
+            printf("\n");
         printf("%02X ", buf[i]);
     }
 }

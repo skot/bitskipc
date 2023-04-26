@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
 
     ftdi_setrts(ftdi, 0);
 
-    send_chippy(ftdi);
+    send_read_address(ftdi);
 
     //read back data
     len = serial_rx(ftdi, buf);

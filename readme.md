@@ -1,3 +1,4 @@
+## bitskipc
 First attempt at a new BM1397 driver. Mostly based off [kano's cgminer](https://github.com/kanoi/cgminer) and [sniffing communication](bm1397_protocol.md) with the [bitaxe](https://github.com/skot/bitaxe).
 
 Massive help from @Georges760 [BM1397 register documentation](https://github.com/skot/BM1397/blob/master/registers.md) effort

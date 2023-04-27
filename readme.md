@@ -9,7 +9,7 @@ This uses [libftdi](https://www.intra2net.com/en/developer/libftdi/) to communic
 ## Prerequisites
 - cmake
 - 1.8V FTDI usbserial adapter attached
-    - It is the ProductID/VendorID of your FTDI adapter is not 0x0403:0x6015, then you should change this in serialmonitor.c
+    - If the ProductID:VendorID of your FTDI adapter is not 0x0403:0x6015, then you should change this in serialmonitor.c
 
 ## Building
 1. `mkdir lib`

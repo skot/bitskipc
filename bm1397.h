@@ -19,9 +19,19 @@ typedef enum {
   CMD_PACKET = 1,
 } packet_type_t;
 
+struct __attribute__((__packed__)) job_packet {
+  uint8_t job_id;
+  uint8_t num_midstates;
+  uint8_t starting_nonce[4];
+  uint8_t nbits[4];
+  uint8_t ntime[4];
+  uint8_t merkle4[4];
+  uint8_t midstates[4][32];
+};
+
 void send_read_address(struct ftdi_context *ftdi);
 void send_init(struct ftdi_context *ftdi);
-void send_work(struct ftdi_context *ftdi);
+void send_work(struct ftdi_context *ftdi, struct job_packet *job);
 
 
 #endif /* BM1397_H_ */

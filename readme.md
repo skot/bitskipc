@@ -13,14 +13,12 @@ This uses [libftdi](https://www.intra2net.com/en/developer/libftdi/) to communic
     - If the ProductID:VendorID of your FTDI adapter is not 0x0403:0x6015, then you should change this in serialmonitor.c
 
 ## Building
-1. `mkdir lib`
-2. `cd lib`
-3. `git clone https://github.com/wjakob/libftdi.git`
-4. `cd ..`
-5. `mkdir build`
-6. `cd build`
-7. `cmake ..`
-8. `make`
+1. `mkdir lib; cd lib`
+2. `git clone https://github.com/wjakob/libftdi.git`
+3. `cd ..`
+4. `mkdir build; cd build`
+5. `cmake ..`
+6. `make`
 
 ## Running
 1. `./bitskipc`

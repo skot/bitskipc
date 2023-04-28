@@ -5,5 +5,6 @@
 
 void prettyHex(unsigned char * buf, int len);
 int msleep(long msec);
+uint32_t flip32(uint32_t val);
 
 #endif // PRETTY_H_

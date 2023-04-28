@@ -2,11 +2,13 @@
 #include <stdint.h>
 #include <string.h>
 
+#include "bm1397.h"
+
 /* compute crc5 over given number of bytes */
 //adapted from https://mightydevices.com/index.php/2018/02/reverse-engineering-antminer-s1/
 uint8_t crc5(uint8_t * data, uint8_t len) {
 	uint8_t i, j, k, index = 0;
-	uint8_t crc = 0x1f;
+	uint8_t crc = CRC5_MASK;
 	/* registers */
 	uint8_t crcin[5] = {1, 1, 1, 1, 1};
 	uint8_t crcout[5] = {1, 1, 1, 1, 1};

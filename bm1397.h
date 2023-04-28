@@ -1,6 +1,8 @@
 #ifndef BM1397_H_
 #define BM1397_H_
 
+#include <ftdi.h>
+
 #define TYPE_JOB 0x20
 #define TYPE_CMD 0x40
 
@@ -14,10 +16,19 @@
 #define CMD_READ 0x02
 #define CMD_INACTIVE 0x03
 
+#define RESPONSE_CMD 0x00
+#define RESPONSE_JOB 0x80
+#define CRC5_MASK 0x1F
+
 typedef enum {
   JOB_PACKET = 0, 
   CMD_PACKET = 1,
 } packet_type_t;
+
+typedef enum {
+  JOB_RESP = 0, 
+  CMD_RESP = 1,
+} response_type_t;
 
 struct __attribute__((__packed__)) job_packet {
   uint8_t job_id;
@@ -29,9 +40,21 @@ struct __attribute__((__packed__)) job_packet {
   uint8_t midstates[4][32];
 };
 
+struct __attribute__((__packed__)) nonce_response {
+    uint8_t preamble[2];
+    uint32_t nonce;
+    uint8_t midstate_num;
+    uint8_t job_id;
+    uint8_t crc;
+};
+
+
 void send_read_address(struct ftdi_context *ftdi);
 void send_init(struct ftdi_context *ftdi);
 void send_work(struct ftdi_context *ftdi, struct job_packet *job);
+void parse_packet(unsigned char *buf, int len);
+void split_response(unsigned char *buf, int len);
+void reset_BM1397(struct ftdi_context *ftdi);
 
 
 #endif /* BM1397_H_ */

@@ -16,6 +16,15 @@ void prettyHex(unsigned char * buf, int len) {
     }
 }
 
+//flip byte order of a 32 bit integer
+uint32_t flip32(uint32_t val) {
+    uint32_t ret = 0;
+    ret |= (val & 0xFF) << 24;
+    ret |= (val & 0xFF00) << 8;
+    ret |= (val & 0xFF0000) >> 8;
+    ret |= (val & 0xFF000000) >> 24;
+    return ret;
+}
 
 
 /* msleep(): Sleep for the requested number of milliseconds. */

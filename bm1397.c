@@ -10,6 +10,88 @@
 
 #define SLEEP_TIME 20
 
+//reset the BM1397 via the RTS line
+void reset_BM1397(struct ftdi_context *ftdi) {
+    int ret;
+
+    //set the RTS line low
+    ret = ftdi_setrts(ftdi, 1);
+    if (ret < 0) {
+        fprintf(stderr, "unable to set RTS: %d (%s)\n", ret, ftdi_get_error_string(ftdi));
+    }
+
+    //sleep for 100ms
+    msleep(100);
+
+    //set the RTS line high
+    ret = ftdi_setrts(ftdi, 0);
+    if (ret < 0) {
+        fprintf(stderr, "unable to set RTS: %d (%s)\n", ret, ftdi_get_error_string(ftdi));
+    }
+
+    //sleep for 100ms
+    msleep(100);
+
+}
+
+//parse job/nonce response
+void parse_job_response(unsigned char *buf, int len) {
+    struct nonce_response * nonce;
+
+    //get the response into the nonce struct
+    //memcpy((void *)&nonce, buf, len);
+    nonce = (struct nonce_response *)buf;
+
+    printf("nonce: %08X @ %02X\n", flip32(nonce->nonce), nonce->job_id);
+
+}
+
+void parse_cmd_packet(unsigned char *buf, int len) {
+    printf("cmd packet\n");
+}
+
+//split the response packet into individual packets
+void split_response(unsigned char *buf, int len) {
+    int i;
+    int packet_len;
+    int packet_start = 0;
+
+    //split the response into individual packets
+    for (i = 1; i < len; i++) {
+        if ((buf[i] == 0xAA) && (buf[i+1] == 0x55)) {
+            packet_len = i - packet_start;
+            parse_packet(buf+packet_start, packet_len);
+            packet_start = i;
+        }
+    }
+
+    //parse the last packet
+    packet_len = i - packet_start;
+    parse_packet(buf+packet_start, packet_len);
+}
+
+
+//parse incoming packets
+void parse_packet(unsigned char *buf, int len) {
+    response_type_t response_type;
+
+    //debug the packet
+    printf("<-");
+    prettyHex(buf, len);
+    printf("\n");
+
+
+    //determine response type
+    if (buf[len-1] & RESPONSE_JOB) {
+        response_type = JOB_RESP;
+        parse_job_response(buf, len);
+    } else {
+        response_type = CMD_RESP;
+        parse_cmd_packet(buf, len);
+    }
+
+}
+
 int send_serial(struct ftdi_context *ftdi, unsigned char *buf, int len) {
     int ret;
 
@@ -128,14 +210,8 @@ void send_init(struct ftdi_context *ftdi) {
     unsigned char prefreq1[9] = {0x00, 0x70, 0x0F, 0x0F, 0x0F, 0x00}; //prefreq - pll0_divider
     send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), prefreq1, 6);
 
-    unsigned char prefreq2[9] = {0x00, 0x70, 0x0F, 0x0F, 0x0F, 0x00}; //prefreq - pll0_divider
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), prefreq2, 6);
-
     unsigned char freqbuf[9] = {0x00, 0x08, 0x40, 0xA0, 0x02, 0x25}; //freqbuf - pll0_parameter
     send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), freqbuf, 6);
-
-    unsigned char freqbuf2[9] = {0x00, 0x08, 0x40, 0xA0, 0x02, 0x25}; //freqbuf - pll0_parameter
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), freqbuf2, 6);
     
 }
 

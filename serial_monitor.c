@@ -8,6 +8,7 @@
 
 #include "pretty.h"
 #include "serial_monitor.h"
+#include "bm1397.h"
 
 #define FTDI_VID 0x0403
 #define FTDI_PID 0x6015
@@ -94,10 +95,6 @@ int16_t serial_rx(struct ftdi_context *ftdi, uint8_t * buf) {
             return ret;
         }
 
-        // Print the data to stdout
-        // fwrite(buf, ret, 1, stdout);
-        // fflush(stdout);
-
         // Wait for a bit before reading more data
         usleep(1000);
         timeout++;
@@ -181,9 +178,7 @@ void debug_serial_rx(struct ftdi_context *ftdi) {
     }
 
     if (ret > 0) {
-        printf("<-");
-        prettyHex(buf, ret);
-        printf("\n");
+        split_response(buf, ret);
     }
 
     memset(buf, 0, 1024);

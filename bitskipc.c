@@ -27,10 +27,7 @@ int main(int argc, char **argv) {
     }
 
     //toggle reset
-    ftdi_setrts(ftdi, 1);
-    msleep(200);
-    ftdi_setrts(ftdi, 0);
-    msleep(200);
+    reset_BM1397(ftdi);
 
     send_read_address(ftdi);
 

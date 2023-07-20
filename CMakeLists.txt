@@ -5,7 +5,7 @@ project(bitskipc)
 add_subdirectory(lib/libftdi)
 
 # Add the source files
-add_executable(bitskipc bitskipc.c serial_monitor.c bm1397.c pretty.c crc.c)
+add_executable(bitskipc bitskipc.c serial_monitor.c bm1366.c pretty.c crc.c)
 
 # Include the ftdi.h header file
 target_include_directories(bitskipc PRIVATE lib/libftdi/src)

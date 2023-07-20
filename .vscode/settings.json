@@ -8,6 +8,7 @@
         "cstring": "c",
         "memory": "c",
         "utility": "c",
-        "bm1397.h": "c"
+        "bm1397.h": "c",
+        "bm1366.h": "c"
     }
 }

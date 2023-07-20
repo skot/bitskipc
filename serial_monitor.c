@@ -8,7 +8,7 @@
 
 #include "pretty.h"
 #include "serial_monitor.h"
-#include "bm1397.h"
+#include "bm1366.h"
 
 #define FTDI_VID 0x0403
 #define FTDI_PID 0x6015

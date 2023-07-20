@@ -5,7 +5,7 @@
 
 #include "serial_monitor.h"
 #include "pretty.h"
-#include "bm1397.h"
+#include "bm1366.h"
 #include "crc.h"
 
 #define SLEEP_TIME 20

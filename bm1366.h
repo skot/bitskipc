@@ -1,5 +1,5 @@
-#ifndef BM1397_H_
-#define BM1397_H_
+#ifndef BM1366_H_
+#define BM1366_H_
 
 #include <ftdi.h>
 
@@ -54,7 +54,7 @@ void send_init(struct ftdi_context *ftdi);
 void send_work(struct ftdi_context *ftdi, struct job_packet *job);
 void parse_packet(unsigned char *buf, int len);
 void split_response(unsigned char *buf, int len);
-void reset_BM1397(struct ftdi_context *ftdi);
+void reset_BM1366(struct ftdi_context *ftdi);
 
 
-#endif /* BM1397_H_ */
+#endif /* BM1366_H_ */

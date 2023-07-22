@@ -11,7 +11,7 @@
 #define SLEEP_TIME 20
 
 //reset the BM1397 via the RTS line
-void reset_BM1397(struct ftdi_context *ftdi) {
+void reset_BM1366(struct ftdi_context *ftdi) {
     int ret;
 
     //set the RTS line low
@@ -149,6 +149,13 @@ void send_BM1397(struct ftdi_context *ftdi, uint8_t header, uint8_t * data, uint
     free(buf);
 }
 
+void send_first_thing(struct ftdi_context *ftdi) {
+
+    unsigned char read_address[6] = {0x00, 0xA4, 0x90, 0x00, 0xFF, 0xFF};
+    //send serial data
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), read_address, 6);
+}
+
 void send_read_address(struct ftdi_context *ftdi) {
 
     unsigned char read_address[2] = {0x00, 0x00};
@@ -176,42 +183,42 @@ void send_init(struct ftdi_context *ftdi) {
 
     //send serial data
     msleep(SLEEP_TIME);
-    send_chain_inactive(ftdi);
 
-    set_chip_address(ftdi, 0x00);
-
-    unsigned char init[6] = {0x00, 0x80, 0x00, 0x00, 0x00, 0x00}; //init1 - clock_order_control0
+    unsigned char init[6] = {0x00, 0xA8, 0x00, 0x07, 0x00, 0x00}; //init1
     send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init, 6);
 
-    unsigned char init2[6] = {0x00, 0x84, 0x00, 0x00, 0x00, 0x00}; //init2 - clock_order_control1
+    unsigned char init2[6] = {0x00, 0x18, 0xFF, 0x0F, 0xC1, 0x00}; //init2
     send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init2, 6);
 
-    unsigned char init3[9] = {0x00, 0x20, 0x00, 0x00, 0x00, 0x01}; //init3 - ordered_clock_enable
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init3, 6);
+    unsigned char init3[9] = {0x00, 0x00}; //init3
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_INACTIVE), init3, 2);
 
-    unsigned char init4[9] = {0x00, 0x3C, 0x80, 0x00, 0x80, 0x74}; //init4 - init_4_?
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init4, 6);
+    unsigned char init4[9] = {0x00, 0x00}; //init4
+    send_BM1397(ftdi, (TYPE_CMD | GROUP_SINGLE | CMD_SETADDRESS), init4, 2);
 
-    unsigned char set_ticket[9] = {0x00, 0x14, 0x00, 0x00, 0x00, 0x00}; //set_ticket - ticket_mask
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), set_ticket, 6);
-
-    unsigned char init5[9] = {0x00, 0x68, 0xC0, 0x70, 0x01, 0x11}; //init5 - pll3_parameter
+    unsigned char init5[9] = {0x00, 0x3C, 0x80, 0x00, 0x85, 0x40}; //init5
     send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init5, 6);
 
-    unsigned char init5_2[9] = {0x00, 0x68, 0xC0, 0x70, 0x01, 0x11}; //init5_2 - pll3_parameter
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init5_2, 6);
+    // unsigned char set_ticket[9] = {0x00, 0x14, 0x00, 0x00, 0x00, 0x00}; //set_ticket - ticket_mask
+    // send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), set_ticket, 6);
 
-    unsigned char init6[9] = {0x00, 0x28, 0x06, 0x00, 0x00, 0x0F}; //init6 - fast_uart_configuration
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init6, 6);
+    // unsigned char init5[9] = {0x00, 0x68, 0xC0, 0x70, 0x01, 0x11}; //init5 - pll3_parameter
+    // send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init5, 6);
 
-    unsigned char baudrate[9] = {0x00, 0x18, 0x00, 0x00, 0x7A, 0x31}; //baudrate - misc_control
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), baudrate, 6);
+    // unsigned char init5_2[9] = {0x00, 0x68, 0xC0, 0x70, 0x01, 0x11}; //init5_2 - pll3_parameter
+    // send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init5_2, 6);
 
-    unsigned char prefreq1[9] = {0x00, 0x70, 0x0F, 0x0F, 0x0F, 0x00}; //prefreq - pll0_divider
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), prefreq1, 6);
+    // unsigned char init6[9] = {0x00, 0x28, 0x06, 0x00, 0x00, 0x0F}; //init6 - fast_uart_configuration
+    // send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), init6, 6);
 
-    unsigned char freqbuf[9] = {0x00, 0x08, 0x40, 0xA0, 0x02, 0x25}; //freqbuf - pll0_parameter
-    send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), freqbuf, 6);
+    // unsigned char baudrate[9] = {0x00, 0x18, 0x00, 0x00, 0x7A, 0x31}; //baudrate - misc_control
+    // send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), baudrate, 6);
+
+    // unsigned char prefreq1[9] = {0x00, 0x70, 0x0F, 0x0F, 0x0F, 0x00}; //prefreq - pll0_divider
+    // send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), prefreq1, 6);
+
+    // unsigned char freqbuf[9] = {0x00, 0x08, 0x40, 0xA0, 0x02, 0x25}; //freqbuf - pll0_parameter
+    // send_BM1397(ftdi, (TYPE_CMD | GROUP_ALL | CMD_WRITE), freqbuf, 6);
     
 }
 
@@ -219,4 +226,9 @@ void send_work(struct ftdi_context *ftdi, struct job_packet *job) {
   
     send_BM1397(ftdi, (TYPE_JOB | GROUP_SINGLE | CMD_WRITE), (uint8_t*)job, sizeof(struct job_packet));
 
+}
+
+void send_work_manual(struct ftdi_context *ftdi) {
+    unsigned char faux_job[] = {0x28, 0x01, 0x00, 0x00, 0x00, 0x00, 0xF8, 0x95, 0x24, 0x19, 0xE0, 0x16, 0xAF, 0x64, 0xF3, 0xC0, 0x09, 0x10, 0xCB, 0xDA, 0xF2, 0x3F, 0x0F, 0xFF, 0xDF, 0x3F, 0x7B, 0x42, 0xAC, 0xC9, 0x8D, 0x70, 0xED, 0x9B, 0xBF, 0xBA, 0x1B, 0x1D, 0x44, 0x74, 0xED, 0xE0, 0x32, 0x28, 0x85, 0xC7, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x00, 0x00, 0x00, 0x65, 0x90, 0x49, 0x10, 0x58, 0x57, 0xDD, 0xA2, 0x47, 0x8A, 0x5E, 0x7C, 0xCC, 0xFE, 0x03, 0x6F, 0xE8, 0xBE, 0x8E, 0xF8, 0xC2, 0x57, 0x21, 0xD4, 0x00, 0x00, 0x00, 0x20}; //init5
+    send_BM1397(ftdi, (TYPE_JOB | GROUP_SINGLE | CMD_WRITE), faux_job, sizeof(faux_job));
 }

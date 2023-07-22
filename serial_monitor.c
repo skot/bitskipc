@@ -11,7 +11,7 @@
 #include "bm1366.h"
 
 #define FTDI_VID 0x0403
-#define FTDI_PID 0x6015
+#define FTDI_PID 0x6001
 #define FTDI_BAUDRATE 115200
 
 #define SERIAL_RX_TIME_MS 1000

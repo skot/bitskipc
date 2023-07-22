@@ -49,12 +49,14 @@ struct __attribute__((__packed__)) nonce_response {
 };
 
 
+void send_first_thing(struct ftdi_context *ftdi);
 void send_read_address(struct ftdi_context *ftdi);
 void send_init(struct ftdi_context *ftdi);
 void send_work(struct ftdi_context *ftdi, struct job_packet *job);
 void parse_packet(unsigned char *buf, int len);
 void split_response(unsigned char *buf, int len);
 void reset_BM1366(struct ftdi_context *ftdi);
+void send_work_manual(struct ftdi_context *ftdi);
 
 
 #endif /* BM1366_H_ */

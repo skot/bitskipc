@@ -36,13 +36,13 @@ void reset_BM1366(struct ftdi_context *ftdi) {
 
 //parse job/nonce response
 void parse_job_response(unsigned char *buf, int len) {
-    struct nonce_response * nonce;
+    //struct nonce_response * nonce;
 
     //get the response into the nonce struct
     //memcpy((void *)&nonce, buf, len);
-    nonce = (struct nonce_response *)buf;
+    //nonce = (struct nonce_response *)buf;
 
-    printf("nonce: %08X @ %02X\n", flip32(nonce->nonce), nonce->job_id);
+    printf("response packet\n");
 
 }
 

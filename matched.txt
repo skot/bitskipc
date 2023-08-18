@@ -1,0 +1,364 @@
+{u'params': [[u'version-rolling'], {u'version-rolling.mask': u'1fffe000', u'version-rolling.min-bit-count': 16}], u'id': 37, u'method': u'mining.configure'}
+{u'result': {u'version-rolling': True, u'version-rolling.mask': u'1fffe000'}, u'id': 37, u'error': None}
+{u'params': [u'Antminer S19 XP/Fri Nov 18 17:36:48 CST 2022', u'e26e1928'], u'id': 38, u'method': u'mining.subscribe'}
+{u'result': [[[u'mining.notify', u'd6a0ad42']], u'd6a0ad42', 4], u'id': 38, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'x'], u'id': 39, u'method': u'mining.authorize'}
+{u'result': True, u'id': 39, u'error': None}
+{u'params': [16384], u'id': None, u'method': u'mining.set_difficulty'}
+{u'params': [u'36beca', u'3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000', u'02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c', u'ffffffff038d7a930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c7c6fd425000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9edffbaebfe2e945cd3d672463660860a8d0c526a10f7d7ae058feb3aabc67dec7900000000', [u'5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3', u'0c447211c931882663daaf3c34b9ae298baa80a19f73ba68f12b5d1b7ff81db9', u'7fbff95846d971f0966e82a9e32a29a5f0833cc44f0131128e4492e065b21a64', u'0cf36013ecb0bb3ade3c301fb1935a6d9596ded0e9064a4e15cd88396e44f53e', u'4de4aef40b43c8259f548a2b0d6dccabf8e9967f90e66c7163b04acd6cbe2c3c', u'ce74fe4fda197ca78102674b3b14af2a0500d2250b79a547db35528f98d0d8fe', u'411b9371d3b3ed5d230c9ee3f78a0c430477d80939a33af5bbd132ee6bd9b410', u'9e357a68b69037d7db33fd8530e1f44dcb76ee0ffde0e7ef2c25fd0d39fc104a', u'55027821cafa97c059b152c31b4f4da67f651eddbd682d39530d395f7d62b43b', u'af0889b8250b24bcab9da067c15583fd2644291e2aed851296295212bcd426d6', u'14a72df0ef8e9e36ecf708e84ef9fc0ce3dc256fe4688c9f61da4c1485a6b0ef', u'1ad78e0ed3d599f0c4678445dccf96be6847f00461c0622c86341ab3844bfbe6'], u'20000000', u'17055f5b', u'64de8c3e', False], u'id': None, u'method': u'mining.notify'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'1721a3', u'592f0000', u'64de8c4f', u'120e0005', u'024a2000'], u'id': 36, u'method': u'mining.submit'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'2b330000', u'64de8c3e', u'cf563a00', u'05a4c000'], u'id': 40, u'method': u'mining.submit'}
+[AA 55 90 45 6B 93 07 44 31 CC 81]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'2d330000', u'64de8c3e', u'936b4590', u'06398000'], u'id': 41, u'method': u'mining.submit'}
+[AA 55 4E EE 67 71 07 43 54 C3 8F]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'2d330000', u'64de8c3e', u'7167ee4e', u'0a986000'], u'id': 42, u'method': u'mining.submit'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'2c330000', u'64de8c3e', u'cf937113', u'0cf48000'], u'id': 43, u'method': u'mining.submit'}
+[AA 55 BA 94 58 1B 06 58 05 80 97]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'30330000', u'64de8c3e', u'1b5894ba', u'00b00000'], u'id': 44, u'method': u'mining.submit'}
+{u'error': [21, u'Job not found', u''], u'id': 36, u'result': None}
+{u'result': True, u'id': 44, u'error': None}
+{u'result': True, u'id': 41, u'error': None}
+{u'result': True, u'id': 42, u'error': None}
+{u'result': True, u'id': 43, u'error': None}
+{u'result': True, u'id': 40, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'2e330000', u'64de8c3e', u'4e97b173', u'03942000'], u'id': 45, u'method': u'mining.submit'}
+{u'result': True, u'id': 45, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'2f330000', u'64de8c3e', u'30a028ae', u'092b4000'], u'id': 46, u'method': u'mining.submit'}
+{u'result': True, u'id': 46, u'error': None}
+[AA 55 0C 22 04 12 09 75 14 35 94]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'33330000', u'64de8c3e', u'1204220c', u'0286a000'], u'id': 47, u'method': u'mining.submit'}
+{u'result': True, u'id': 47, u'error': None}
+[AA 55 14 78 32 95 06 70 39 68 94]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'33330000', u'64de8c3e', u'95327814', u'072d0000'], u'id': 48, u'method': u'mining.submit'}
+[AA 55 41 28 9F 1A 06 76 3B 76 9B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'33330000', u'64de8c3e', u'1a9f2841', u'076ec000'], u'id': 49, u'method': u'mining.submit'}
+{u'result': True, u'id': 48, u'error': None}
+{u'result': True, u'id': 49, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'31330000', u'64de8c3e', u'67faacc9', u'0d14c000'], u'id': 50, u'method': u'mining.submit'}
+{u'result': True, u'id': 50, u'error': None}
+[AA 55 54 6A D7 F0 07 8D 0F E5 85]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'36330000', u'64de8c3e', u'f0d76a54', u'01fca000'], u'id': 51, u'method': u'mining.submit'}
+{u'result': True, u'id': 51, u'error': None}
+[AA 55 26 09 0A 63 06 8E 2B F6 98]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'36330000', u'64de8c3e', u'630a0926', u'057ec000'], u'id': 52, u'method': u'mining.submit'}
+{u'result': True, u'id': 52, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'37330000', u'64de8c3e', u'51248405', u'018d6000'], u'id': 53, u'method': u'mining.submit'}
+{u'result': True, u'id': 53, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'37330000', u'64de8c3e', u'72419ac2', u'08438000'], u'id': 54, u'method': u'mining.submit'}
+{u'result': True, u'id': 54, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'38330000', u'64de8c3e', u'd8201119', u'09240000'], u'id': 55, u'method': u'mining.submit'}
+{u'result': True, u'id': 55, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'38330000', u'64de8c3e', u'112363d0', u'0f580000'], u'id': 56, u'method': u'mining.submit'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'37330000', u'64de8c3e', u'c924430f', u'0fe38000'], u'id': 57, u'method': u'mining.submit'}
+{u'result': True, u'id': 56, u'error': None}
+{u'result': True, u'id': 57, u'error': None}
+[AA 55 4E A8 0D 91 06 BB 03 7B 83]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'3c330000', u'64de8c3e', u'910da84e', u'006f6000'], u'id': 58, u'method': u'mining.submit'}
+{u'result': True, u'id': 58, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'3b330000', u'64de8c3e', u'efde8965', u'01446000'], u'id': 59, u'method': u'mining.submit'}
+{u'result': True, u'id': 59, u'error': None}
+[AA 55 10 EA 2D 86 06 BA 24 22 9E]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'3c330000', u'64de8c3e', u'862dea10', u'04844000'], u'id': 60, u'method': u'mining.submit'}
+{u'result': True, u'id': 60, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'3b330000', u'64de8c3e', u'f9773da3', u'0a2c4000'], u'id': 61, u'method': u'mining.submit'}
+{u'result': True, u'id': 61, u'error': None}
+[AA 55 52 45 CE 03 09 B8 72 00 82]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'3c330000', u'64de8c3e', u'03ce4552', u'0e400000'], u'id': 62, u'method': u'mining.submit'}
+{u'result': True, u'id': 62, u'error': None}
+[AA 55 A0 8C 85 7A 08 D3 8D A3 94]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'3f330000', u'64de8c3e', u'7a858ca0', u'11b46000'], u'id': 63, u'method': u'mining.submit'}
+{u'result': True, u'id': 63, u'error': None}
+[AA 55 23 14 6D 31 06 ED 07 65 98]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'42330000', u'64de8c3e', u'316d1423', u'00eca000'], u'id': 64, u'method': u'mining.submit'}
+{u'result': True, u'id': 64, u'error': None}
+[AA 55 65 27 05 9F 06 EA 24 02 97]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'42330000', u'64de8c3e', u'9f052765', u'04804000'], u'id': 65, u'method': u'mining.submit'}
+{u'result': True, u'id': 65, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'40330000', u'64de8c3e', u'f1174782', u'054ae000'], u'id': 66, u'method': u'mining.submit'}
+{u'result': True, u'id': 66, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'40330000', u'64de8c3e', u'2a03de8a', u'1194a000'], u'id': 67, u'method': u'mining.submit'}
+{u'result': True, u'id': 67, u'error': None}
+[AA 55 88 81 1C 06 06 03 33 EB 81]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'45330000', u'64de8c3e', u'061c8188', u'067d6000'], u'id': 68, u'method': u'mining.submit'}
+{u'result': True, u'id': 68, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'44330000', u'64de8c3e', u'd5c55eb9', u'09818000'], u'id': 69, u'method': u'mining.submit'}
+{u'result': True, u'id': 69, u'error': None}
+[AA 55 50 CE 50 BA 06 04 8F 44 91]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'45330000', u'64de8c3e', u'ba50ce50', u'11e88000'], u'id': 70, u'method': u'mining.submit'}
+{u'result': True, u'id': 70, u'error': None}
+[AA 55 70 4A 01 F9 07 1A 34 3A 9B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'48330000', u'64de8c3e', u'f9014a70', u'06874000'], u'id': 71, u'method': u'mining.submit'}
+{u'result': True, u'id': 71, u'error': None}
+[AA 55 52 1A BF 37 06 1E 85 B6 95]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'48330000', u'64de8c3e', u'37bf1a52', u'10b6c000'], u'id': 72, u'method': u'mining.submit'}
+{u'result': True, u'id': 72, u'error': None}
+[AA 55 03 51 88 1D 06 1F 98 47 87]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'48330000', u'64de8c3e', u'1d885103', u'1308e000'], u'id': 73, u'method': u'mining.submit'}
+{u'result': True, u'id': 73, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'49330000', u'64de8c3e', u'344c8a07', u'041d6000'], u'id': 74, u'method': u'mining.submit'}
+{u'result': True, u'id': 74, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'49330000', u'64de8c3e', u'1fae3679', u'091de000'], u'id': 75, u'method': u'mining.submit'}
+{u'result': True, u'id': 75, u'error': None}
+[AA 55 21 2A DB C8 07 35 4E B5 8E]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4b330000', u'64de8c3e', u'c8db2a21', u'09d6a000'], u'id': 76, u'method': u'mining.submit'}
+{u'result': True, u'id': 76, u'error': None}
+[AA 55 28 F2 AB FF 06 36 89 B6 9F]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4b330000', u'64de8c3e', u'ffabf228', u'1136c000'], u'id': 77, u'method': u'mining.submit'}
+{u'result': True, u'id': 77, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4d330000', u'64de8c3e', u'98a5d54a', u'043e8000'], u'id': 78, u'method': u'mining.submit'}
+{u'result': True, u'id': 78, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4c330000', u'64de8c3e', u'83feb5d8', u'0530a000'], u'id': 79, u'method': u'mining.submit'}
+[AA 55 88 96 03 7D 09 4E 2E 1E 84]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4e330000', u'64de8c3e', u'7d039688', u'05c3c000'], u'id': 80, u'method': u'mining.submit'}
+{u'result': True, u'id': 79, u'error': None}
+{u'result': True, u'id': 80, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4c330000', u'64de8c3e', u'48bf1a24', u'09412000'], u'id': 81, u'method': u'mining.submit'}
+{u'result': True, u'id': 81, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4c330000', u'64de8c3e', u'd1aa41b4', u'09ef4000'], u'id': 82, u'method': u'mining.submit'}
+{u'result': True, u'id': 82, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4c330000', u'64de8c3e', u'f3d2e698', u'1110e000'], u'id': 83, u'method': u'mining.submit'}
+{u'result': True, u'id': 83, u'error': None}
+[AA 55 84 59 10 2F 07 49 8F F1 84]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4e330000', u'64de8c3e', u'2f105984', u'11fe2000'], u'id': 84, u'method': u'mining.submit'}
+{u'result': True, u'id': 84, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'50330000', u'64de8c3e', u'150a853d', u'05cea000'], u'id': 85, u'method': u'mining.submit'}
+{u'result': True, u'id': 85, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4f330000', u'64de8c3e', u'f873b03b', u'06bc2000'], u'id': 86, u'method': u'mining.submit'}
+{u'result': True, u'id': 86, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'50330000', u'64de8c3e', u'7bf325b1', u'07982000'], u'id': 87, u'method': u'mining.submit'}
+{u'result': True, u'id': 87, u'error': None}
+[AA 55 59 85 98 43 06 64 53 2C 8B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'51330000', u'64de8c3e', u'43988559', u'0a658000'], u'id': 88, u'method': u'mining.submit'}
+{u'result': True, u'id': 88, u'error': None}
+[AA 55 55 68 CF 10 06 63 65 5B 9F]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'51330000', u'64de8c3e', u'10cf6855', u'0cab6000'], u'id': 89, u'method': u'mining.submit'}
+{u'result': True, u'id': 89, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'4f330000', u'64de8c3e', u'443a005b', u'10604000'], u'id': 90, u'method': u'mining.submit'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'50330000', u'64de8c3e', u'00a5822c', u'10dba000'], u'id': 91, u'method': u'mining.submit'}
+{u'result': True, u'id': 90, u'error': None}
+{u'result': True, u'id': 91, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'52330000', u'64de8c3e', u'8843b65f', u'0648a000'], u'id': 92, u'method': u'mining.submit'}
+{u'result': True, u'id': 92, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'52330000', u'64de8c3e', u'33560694', u'0f80e000'], u'id': 93, u'method': u'mining.submit'}
+{u'result': True, u'id': 93, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'55330000', u'64de8c3e', u'4530e042', u'02512000'], u'id': 94, u'method': u'mining.submit'}
+{u'result': True, u'id': 94, u'error': None}
+[AA 55 DE E2 25 C3 09 91 3D 01 8D]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'57330000', u'64de8c3e', u'c325e2de', u'07a02000'], u'id': 95, u'method': u'mining.submit'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'55330000', u'64de8c3e', u'a8637acd', u'081c0000'], u'id': 96, u'method': u'mining.submit'}
+{u'result': True, u'id': 95, u'error': None}
+{u'result': True, u'id': 96, u'error': None}
+[AA 55 2E 08 02 FC 08 90 7B 50 93]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'57330000', u'64de8c3e', u'fc02082e', u'0f6a0000'], u'id': 97, u'method': u'mining.submit'}
+{u'result': True, u'id': 97, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'59330000', u'64de8c3e', u'05c3f45a', u'00082000'], u'id': 98, u'method': u'mining.submit'}
+[AA 55 00 33 2C 83 06 A9 04 09 9A]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36beca', u'5a330000', u'64de8c3e', u'832c3300', u'00812000'], u'id': 99, u'method': u'mining.submit'}
+{u'result': True, u'id': 98, u'error': None}
+{u'params': [u'36c151', u'3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000', u'02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c', u'ffffffff037ba0930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c182ade25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed28c351c0aaecb58975fc53bfffb8d92f866b6e67872633a17fa1704cb02da74700000000', [u'5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3', u'0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4', u'dc74d2b74bef4395269c379886f5d8e643d0f1b3b4820b4a3f449cd720aa6aef', u'b6d359610bd523b1152f48030e719f953e0545b1f4ec31d9527aaa5bb1efda71', u'1d5445a28521806f3c5793594a4dbd2a33c593f327a1eb91426d48e1fb989627', u'1cbe558a73ebdbae9a4763ed1645e87009e618d44e4be3eba1ef560eea83dc27', u'71a8169956a21139807530067657b3641c6b4ad502be96631b24ff845c47582d', u'2014fdc1095f05b8a99bc90b19963476a73708154738d7d474f76e56b461b64c', u'ea2e0adbbb7323e66156b90324f8005a86f8f75664ce62139eaa01240ad6665a', u'dcffde99ababc0a298cf723971e4d205909e443bbd59534f66765999bd82a7c9', u'3fa604f4c2bcc46165ab987da9f0ec7e7f8f4a75d581859ba3e2c30a5a3ce1b6', u'b22b0de4231d9cf834c835182c2146253b78c6779010dd699d73aa979a33254d'], u'20000000', u'17055f5b', u'64de8c7a', False], u'id': None, u'method': u'mining.notify'}
+{u'result': True, u'id': 99, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'363f0000', u'64de8c7a', u'e3f17001', u'048de000'], u'id': 100, u'method': u'mining.submit'}
+{u'result': True, u'id': 100, u'error': None}
+[AA 55 4E 5E 82 11 07 C2 52 72 8A]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'373f0000', u'64de8c7a', u'11825e4e', u'0a4e4000'], u'id': 101, u'method': u'mining.submit'}
+{u'result': True, u'id': 101, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'393f0000', u'64de8c7a', u'85d1da56', u'00a96000'], u'id': 102, u'method': u'mining.submit'}
+{u'result': True, u'id': 102, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'393f0000', u'64de8c7a', u'd48afe54', u'0c22c000'], u'id': 103, u'method': u'mining.submit'}
+[AA 55 59 94 13 1C 07 DB 62 F3 9D]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3a3f0000', u'64de8c7a', u'1c139459', u'0c5e6000'], u'id': 104, u'method': u'mining.submit'}
+{u'result': True, u'id': 103, u'error': None}
+[AA 55 7E 91 34 00 06 DE 68 EE 9A]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3a3f0000', u'64de8c7a', u'0034917e', u'0d1dc000'], u'id': 105, u'method': u'mining.submit'}
+{u'result': True, u'id': 104, u'error': None}
+{u'result': True, u'id': 105, u'error': None}
+[AA 55 C4 41 46 C0 07 DB 7B A3 95]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3a3f0000', u'64de8c7a', u'c04641c4', u'0f746000'], u'id': 106, u'method': u'mining.submit'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'393f0000', u'64de8c7a', u'9491d91e', u'0f892000'], u'id': 107, u'method': u'mining.submit'}
+{u'result': True, u'id': 106, u'error': None}
+{u'result': True, u'id': 107, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'393f0000', u'64de8c7a', u'9100b29a', u'119cc000'], u'id': 108, u'method': u'mining.submit'}
+[AA 55 5F 00 FE 8F 08 DA 8E 1A 87]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3a3f0000', u'64de8c7a', u'8ffe005f', u'11c34000'], u'id': 109, u'method': u'mining.submit'}
+{u'result': True, u'id': 108, u'error': None}
+{u'result': True, u'id': 109, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3c3f0000', u'64de8c7a', u'b4bfc172', u'02b4c000'], u'id': 110, u'method': u'mining.submit'}
+{u'result': True, u'id': 110, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3b3f0000', u'64de8c7a', u'ed095abe', u'04576000'], u'id': 111, u'method': u'mining.submit'}
+{u'result': True, u'id': 111, u'error': None}
+[AA 55 66 20 86 87 07 F0 2A A0 8B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3d3f0000', u'64de8c7a', u'87862066', u'05540000'], u'id': 112, u'method': u'mining.submit'}
+{u'result': True, u'id': 112, u'error': None}
+[AA 55 75 34 3D 9F 06 F7 4B 2F 88]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3d3f0000', u'64de8c7a', u'9f3d3475', u'0965e000'], u'id': 113, u'method': u'mining.submit'}
+{u'result': True, u'id': 113, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3b3f0000', u'64de8c7a', u'b56e911c', u'0d3d2000'], u'id': 114, u'method': u'mining.submit'}
+{u'result': True, u'id': 114, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3b3f0000', u'64de8c7a', u'01a6742b', u'0e3ee000'], u'id': 115, u'method': u'mining.submit'}
+{u'result': True, u'id': 115, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3c3f0000', u'64de8c7a', u'b127334f', u'0fd22000'], u'id': 116, u'method': u'mining.submit'}
+{u'result': True, u'id': 116, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3f3f0000', u'64de8c7a', u'6a90d590', u'040f2000'], u'id': 117, u'method': u'mining.submit'}
+{u'result': True, u'id': 117, u'error': None}
+[AA 55 10 01 69 C3 08 0E 3B B6 88]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'403f0000', u'64de8c7a', u'c3690110', u'0776c000'], u'id': 118, u'method': u'mining.submit'}
+{u'result': True, u'id': 118, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'3f3f0000', u'64de8c7a', u'1832eaa8', u'127e2000'], u'id': 119, u'method': u'mining.submit'}
+{u'result': True, u'id': 119, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'413f0000', u'64de8c7a', u'41aa1e8e', u'00376000'], u'id': 120, u'method': u'mining.submit'}
+{u'result': True, u'id': 120, u'error': None}
+[AA 55 3B 52 EB 01 06 20 0A B0 8F]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'433f0000', u'64de8c7a', u'01eb523b', u'01560000'], u'id': 121, u'method': u'mining.submit'}
+{u'result': True, u'id': 121, u'error': None}
+[AA 55 1A 22 09 00 08 23 47 43 8F]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'433f0000', u'64de8c7a', u'0009221a', u'08e86000'], u'id': 122, u'method': u'mining.submit'}
+{u'result': True, u'id': 122, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'413f0000', u'64de8c7a', u'7df72640', u'0f48c000'], u'id': 123, u'method': u'mining.submit'}
+{u'result': True, u'id': 123, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'423f0000', u'64de8c7a', u'c4b6b6b0', u'12f6e000'], u'id': 124, u'method': u'mining.submit'}
+{u'result': True, u'id': 124, u'error': None}
+[AA 55 7C BD 25 45 06 55 5F 55 9B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'493f0000', u'64de8c7a', u'4525bd7c', u'0beaa000'], u'id': 125, u'method': u'mining.submit'}
+{u'result': True, u'id': 125, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'473f0000', u'64de8c7a', u'a22420c7', u'0d3cc000'], u'id': 126, u'method': u'mining.submit'}
+{u'result': True, u'id': 126, u'error': None}
+[AA 55 0F 8D CF 2A 07 53 76 13 8B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'493f0000', u'64de8c7a', u'2acf8d0f', u'0ec26000'], u'id': 127, u'method': u'mining.submit'}
+{u'result': True, u'id': 127, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'483f0000', u'64de8c7a', u'b3e9240a', u'1156e000'], u'id': 128, u'method': u'mining.submit'}
+{u'result': True, u'id': 128, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'4a3f0000', u'64de8c7a', u'a9d77969', u'03ac6000'], u'id': 129, u'method': u'mining.submit'}
+{u'result': True, u'id': 129, u'error': None}
+[AA 55 23 9E 65 C5 06 68 2A 28 9D]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'4c3f0000', u'64de8c7a', u'c5659e23', u'05450000'], u'id': 130, u'method': u'mining.submit'}
+[AA 55 37 9A E0 53 07 6C 2A CC 8C]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'4c3f0000', u'64de8c7a', u'53e09a37', u'05598000'], u'id': 131, u'method': u'mining.submit'}
+{u'result': True, u'id': 130, u'error': None}
+{u'result': True, u'id': 131, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'4b3f0000', u'64de8c7a', u'15315041', u'08c54000'], u'id': 132, u'method': u'mining.submit'}
+{u'result': True, u'id': 132, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'4a3f0000', u'64de8c7a', u'34b291c4', u'0f14a000'], u'id': 133, u'method': u'mining.submit'}
+{u'result': True, u'id': 133, u'error': None}
+[AA 55 68 82 66 65 06 84 6E BC 8B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'4f3f0000', u'64de8c7a', u'65668268', u'0dd78000'], u'id': 134, u'method': u'mining.submit'}
+{u'result': True, u'id': 134, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'4d3f0000', u'64de8c7a', u'd216059e', u'12eb6000'], u'id': 135, u'method': u'mining.submit'}
+{u'result': True, u'id': 135, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'513f0000', u'64de8c7a', u'c09a702a', u'01a9c000'], u'id': 136, u'method': u'mining.submit'}
+{u'result': True, u'id': 136, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'503f0000', u'64de8c7a', u'f3b6e8a0', u'07346000'], u'id': 137, u'method': u'mining.submit'}
+{u'result': True, u'id': 137, u'error': None}
+[AA 55 03 45 C8 5F 08 9C 7C E4 8B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'523f0000', u'64de8c7a', u'5fc84503', u'0f9c8000'], u'id': 138, u'method': u'mining.submit'}
+{u'result': True, u'id': 138, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'513f0000', u'64de8c7a', u'd7ad4d64', u'12738000'], u'id': 139, u'method': u'mining.submit'}
+{u'result': True, u'id': 139, u'error': None}
+[AA 55 19 87 1A 2B 06 B2 0D 82 8B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'553f0000', u'64de8c7a', u'2b1a8719', u'01b04000'], u'id': 140, u'method': u'mining.submit'}
+{u'result': True, u'id': 140, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'543f0000', u'64de8c7a', u'c315f41e', u'07df0000'], u'id': 141, u'method': u'mining.submit'}
+{u'result': True, u'id': 141, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'543f0000', u'64de8c7a', u'39402900', u'0bb4c000'], u'id': 142, u'method': u'mining.submit'}
+[AA 55 BF A8 BA CA 06 B1 5F E9 88]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'553f0000', u'64de8c7a', u'cabaa8bf', u'0bfd2000'], u'id': 143, u'method': u'mining.submit'}
+{u'result': True, u'id': 142, u'error': None}
+{u'result': True, u'id': 143, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'543f0000', u'64de8c7a', u'4094867d', u'0dc4e000'], u'id': 144, u'method': u'mining.submit'}
+{u'result': True, u'id': 144, u'error': None}
+[AA 55 7E 3E 1A 27 07 B7 84 CF 8E]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'553f0000', u'64de8c7a', u'271a3e7e', u'1099e000'], u'id': 145, u'method': u'mining.submit'}
+{u'result': True, u'id': 145, u'error': None}
+[AA 55 1C E6 8F 80 08 CB 08 83 94]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'583f0000', u'64de8c7a', u'808fe61c', u'01106000'], u'id': 146, u'method': u'mining.submit'}
+{u'result': True, u'id': 146, u'error': None}
+[AA 55 94 4A C0 A9 08 CD 30 3D 87]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'583f0000', u'64de8c7a', u'a9c04a94', u'0607a000'], u'id': 147, u'method': u'mining.submit'}
+{u'result': True, u'id': 147, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'573f0000', u'64de8c7a', u'02f8a0db', u'08936000'], u'id': 148, u'method': u'mining.submit'}
+{u'result': True, u'id': 148, u'error': None}
+[AA 55 26 76 EE 5C 07 CC 61 34 81]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'583f0000', u'64de8c7a', u'5cee7626', u'0c268000'], u'id': 149, u'method': u'mining.submit'}
+{u'result': True, u'id': 149, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'573f0000', u'64de8c7a', u'67442a85', u'0ddae000'], u'id': 150, u'method': u'mining.submit'}
+{u'result': True, u'id': 150, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'573f0000', u'64de8c7a', u'09ddc19c', u'128c2000'], u'id': 151, u'method': u'mining.submit'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'563f0000', u'64de8c7a', u'8f86550c', u'12d16000'], u'id': 152, u'method': u'mining.submit'}
+{u'result': True, u'id': 151, u'error': None}
+{u'result': True, u'id': 152, u'error': None}
+[AA 55 54 31 05 10 09 E1 23 41 92]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'5b3f0000', u'64de8c7a', u'10053154', u'04682000'], u'id': 153, u'method': u'mining.submit'}
+{u'result': True, u'id': 153, u'error': None}
+[AA 55 A7 2F 32 62 08 E7 34 CF 98]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'5b3f0000', u'64de8c7a', u'62322fa7', u'0699e000'], u'id': 154, u'method': u'mining.submit'}
+[AA 55 C8 24 75 74 06 E7 38 37 9D]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'5b3f0000', u'64de8c7a', u'747524c8', u'0706e000'], u'id': 155, u'method': u'mining.submit'}
+{u'result': True, u'id': 154, u'error': None}
+{u'result': True, u'id': 155, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'5a3f0000', u'64de8c7a', u'84991dd1', u'0b478000'], u'id': 156, u'method': u'mining.submit'}
+[AA 55 27 08 7E 89 06 E0 5F 80 9F]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'5b3f0000', u'64de8c7a', u'897e0827', u'0bf00000'], u'id': 157, u'method': u'mining.submit'}
+{u'result': True, u'id': 156, u'error': None}
+{u'result': True, u'id': 157, u'error': None}
+[AA 55 37 0C 81 BF 07 E1 6A 61 8C]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'5b3f0000', u'64de8c7a', u'bf810c37', u'0d4c2000'], u'id': 158, u'method': u'mining.submit'}
+{u'result': True, u'id': 158, u'error': None}
+[AA 55 63 84 87 9C 0C FC 04 A4 9B]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'5e3f0000', u'64de8c7a', u'9c878463', u'00948000'], u'id': 159, u'method': u'mining.submit'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c151', u'5c3f0000', u'64de8c7a', u'a2704142', u'01416000'], u'id': 160, u'method': u'mining.submit'}
+{u'result': True, u'id': 159, u'error': None}
+{u'result': True, u'id': 160, u'error': None}
+{u'params': [262144], u'id': None, u'method': u'mining.set_difficulty'}
+{u'params': [u'36c157', u'3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000', u'02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c', u'ffffffff037ba0930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c182ade25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed28c351c0aaecb58975fc53bfffb8d92f866b6e67872633a17fa1704cb02da74700000000', [u'5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3', u'0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4', u'dc74d2b74bef4395269c379886f5d8e643d0f1b3b4820b4a3f449cd720aa6aef', u'b6d359610bd523b1152f48030e719f953e0545b1f4ec31d9527aaa5bb1efda71', u'1d5445a28521806f3c5793594a4dbd2a33c593f327a1eb91426d48e1fb989627', u'1cbe558a73ebdbae9a4763ed1645e87009e618d44e4be3eba1ef560eea83dc27', u'71a8169956a21139807530067657b3641c6b4ad502be96631b24ff845c47582d', u'2014fdc1095f05b8a99bc90b19963476a73708154738d7d474f76e56b461b64c', u'ea2e0adbbb7323e66156b90324f8005a86f8f75664ce62139eaa01240ad6665a', u'dcffde99ababc0a298cf723971e4d205909e443bbd59534f66765999bd82a7c9', u'3fa604f4c2bcc46165ab987da9f0ec7e7f8f4a75d581859ba3e2c30a5a3ce1b6', u'b22b0de4231d9cf834c835182c2146253b78c6779010dd699d73aa979a33254d'], u'20000000', u'17055f5b', u'64de8c7a', False], u'id': None, u'method': u'mining.notify'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c157', u'8a490000', u'64de8c7a', u'249c258f', u'01c18000'], u'id': 161, u'method': u'mining.submit'}
+{u'result': True, u'id': 161, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c157', u'93490000', u'64de8c7a', u'7c4df960', u'04a08000'], u'id': 162, u'method': u'mining.submit'}
+{u'result': True, u'id': 162, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c157', u'96490000', u'64de8c7a', u'9423d842', u'0f75e000'], u'id': 163, u'method': u'mining.submit'}
+{u'result': True, u'id': 163, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c157', u'99490000', u'64de8c7a', u'e69e1a37', u'00596000'], u'id': 164, u'method': u'mining.submit'}
+{u'result': True, u'id': 164, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c157', u'a8490000', u'64de8c7a', u'463d4d11', u'0d69e000'], u'id': 165, u'method': u'mining.submit'}
+{u'result': True, u'id': 165, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c157', u'a7490000', u'64de8c7a', u'23a79084', u'12056000'], u'id': 166, u'method': u'mining.submit'}
+{u'result': True, u'id': 166, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c157', u'ae490000', u'64de8c7a', u'60a13c9f', u'0017e000'], u'id': 167, u'method': u'mining.submit'}
+{u'params': [u'36c3df', u'3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000', u'02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c', u'ffffffff037dd8930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c0a88ec25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed4617b6bc6681a91d7c497b83410b17affcdbb56df2b345238af6b6c0fd45fde000000000', [u'5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3', u'0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4', u'7f24b32c0cf385efd99c971abe42df5bf374b3cefd4468dd449bbb10800671f9', u'db74bb43475af579ef9397f1edaf78e658fd71b039f916d308cb365d1e531944', u'aff4d80a4f5302316da010884d8d0ee08595c8d673ad0fcb3d3fbb816c629438', u'e8f2d20eacd5cf5eef5cd3b857a50521064dcf1a543c5da754be0548a6e6ca10', u'64fc107ea4b29c631a9e06ae5a24b76f7aed8d6c56299ad552e75ff4733f56f2', u'1c7e51eee50bf35775f8858a0f850a9bcfabc9cacdcb61e31f9c9deb49d3c5dd', u'0001864ac4c8951e3b9fa9df0397f1f34ac1c7df7a89b80cd533dd3dc0e20256', u'6569d1fa1967fc79af7e9b4473b5870fc48a2cdab68a0691364fd03479c89588', u'fb9fa3046dfc316b516533c067af4e79c9e6d6f7f2a1de1300b9fc913819b8b5', u'ecd8449c7882a932f08091f348d3ddaf79c32e4dbd8daccb32ffb631daa3cf0c'], u'20000000', u'17055f5b', u'64de8cb6', False], u'id': None, u'method': u'mining.notify'}
+{u'result': True, u'id': 167, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c3df', u'91550000', u'64de8cb6', u'195dc8c2', u'03720000'], u'id': 168, u'method': u'mining.submit'}
+{u'result': True, u'id': 168, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c3df', u'9d550000', u'64de8cb6', u'1920fb2e', u'07e86000'], u'id': 169, u'method': u'mining.submit'}
+{u'result': True, u'id': 169, u'error': None}
+[AA 55 9C F1 52 BC 0A 0D 7B D5 92]
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c3df', u'a2550000', u'64de8cb6', u'bc52f19c', u'0f7aa000'], u'id': 170, u'method': u'mining.submit'}
+{u'result': True, u'id': 170, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c3df', u'a4550000', u'64de8cb6', u'88019a35', u'07b78000'], u'id': 171, u'method': u'mining.submit'}
+{u'result': True, u'id': 171, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c3df', u'b6550000', u'64de8cb6', u'f810e03c', u'09066000'], u'id': 172, u'method': u'mining.submit'}
+{u'result': True, u'id': 172, u'error': None}
+{u'params': [524288], u'id': None, u'method': u'mining.set_difficulty'}
+{u'params': [u'36c3e6', u'3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000', u'02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c', u'ffffffff037dd8930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c0a88ec25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed4617b6bc6681a91d7c497b83410b17affcdbb56df2b345238af6b6c0fd45fde000000000', [u'5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3', u'0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4', u'7f24b32c0cf385efd99c971abe42df5bf374b3cefd4468dd449bbb10800671f9', u'db74bb43475af579ef9397f1edaf78e658fd71b039f916d308cb365d1e531944', u'aff4d80a4f5302316da010884d8d0ee08595c8d673ad0fcb3d3fbb816c629438', u'e8f2d20eacd5cf5eef5cd3b857a50521064dcf1a543c5da754be0548a6e6ca10', u'64fc107ea4b29c631a9e06ae5a24b76f7aed8d6c56299ad552e75ff4733f56f2', u'1c7e51eee50bf35775f8858a0f850a9bcfabc9cacdcb61e31f9c9deb49d3c5dd', u'0001864ac4c8951e3b9fa9df0397f1f34ac1c7df7a89b80cd533dd3dc0e20256', u'6569d1fa1967fc79af7e9b4473b5870fc48a2cdab68a0691364fd03479c89588', u'fb9fa3046dfc316b516533c067af4e79c9e6d6f7f2a1de1300b9fc913819b8b5', u'ecd8449c7882a932f08091f348d3ddaf79c32e4dbd8daccb32ffb631daa3cf0c'], u'20000000', u'17055f5b', u'64de8cb6', False], u'id': None, u'method': u'mining.notify'}
+{u'params': [u'36c670', u'3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000', u'02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c', u'ffffffff03d7f6930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c0b51f425000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed382fa2830a3d23e680c1266ae83847f6e2181c0b2bd088eadcc585a4ad36101400000000', [u'5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3', u'0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4', u'7a6cb3bd8d4af128e1fda0ae9f413e95f8cf1fe4c4096b5893c2f50cbbc8a7be', u'408845bc009bfb680d648782ade7fe88974e149f2779c29f9c1cb772eee4f071', u'd79640a86a770e301fba61296ae6c4fedd1ce15c60af2de51f91c0394171a661', u'8dea617ac6a8647111d5cc0adcc830f5264828388f990477a10fc45b42cac179', u'87725932ec4be94fb2a8da9d5864053eece76e41e4c468c1b2d223914d3dd0fa', u'ae37540540078e6e4dc8c9a0cf983d6115f35219db995ae55093bf2a23b104f2', u'b9be45524585131702e0fba99188feb81d49dd0341c67b007066f6a391222a25', u'15a4b20ebb7bd7d7cbdbb4b4b84f0a92d1b930b958cf9da5f51f6ea3ae1d3c9a', u'd3619f04a339ed6e94eb08a7f94f2d0a9a47f1630fde64424da5dc27c00c1eb2', u'459ceb0b45e5842a5b42b7da93b68f04c12610d1a5ec3d4094191cbcfe8cc190'], u'20000000', u'17055f5b', u'64de8cf2', False], u'id': None, u'method': u'mining.notify'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c670', u'276c0000', u'64de8cf2', u'419bb5b8', u'0f346000'], u'id': 173, u'method': u'mining.submit'}
+{u'result': True, u'id': 173, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c670', u'2d6c0000', u'64de8cf2', u'02565e00', u'0dd60000'], u'id': 174, u'method': u'mining.submit'}
+{u'result': True, u'id': 174, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c670', u'2d6c0000', u'64de8cf2', u'c0e7196a', u'0fa50000'], u'id': 175, u'method': u'mining.submit'}
+{u'result': True, u'id': 175, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c670', u'2e6c0000', u'64de8cf2', u'2c9751cf', u'01cc6000'], u'id': 176, u'method': u'mining.submit'}
+{u'result': True, u'id': 176, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c670', u'2f6c0000', u'64de8cf2', u'946fa097', u'03d76000'], u'id': 177, u'method': u'mining.submit'}
+{u'result': True, u'id': 177, u'error': None}
+{u'params': [u'36c8fb', u'3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000', u'02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c', u'ffffffff03830e940000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c6763fa25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed7c2fee0d48dcc5c768b9fa088df62cf3da5545514fb4924e4c3d9d0a3cc5044900000000', [u'5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3', u'0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4', u'7a6cb3bd8d4af128e1fda0ae9f413e95f8cf1fe4c4096b5893c2f50cbbc8a7be', u'408845bc009bfb680d648782ade7fe88974e149f2779c29f9c1cb772eee4f071', u'5eb50c88b9eeef55078850ff7d87ff16357b1be1aa9565f2f1f9453651ff2cab', u'967add0069adffe920bd32fc401aa968acd0fce0f7c61803f8569cd453d16edc', u'd0df3371407798a3924942d8456b7c741d385daaaa82e5b7e25d49a151b4425a', u'0853f30717558aa7bb5a78446e6e1789d208016b58f384b0b0c07c5afcdd0bbb', u'596001215badffa1cfa4d84d78dacd7b64937e3dff1179361480fb833aef0cb5', u'033aaf91dede2dae0ce3ba0d2667c016ebd7b5219aea750654df616a72a01d56', u'def42a31998771df0ae7083edc24f953b19b78888c2f880cd7add06afe86f103', u'6e77e8babf50ee0d093969a6e8a1965ab633fa9baa839555ee1119385e28f17b'], u'20000000', u'17055f5b', u'64de8d2e', False], u'id': None, u'method': u'mining.notify'}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c8fb', u'67820000', u'64de8d2e', u'e8c95010', u'08dcc000'], u'id': 178, u'method': u'mining.submit'}
+{u'result': True, u'id': 178, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c8fb', u'7e820000', u'64de8d2e', u'80c354b7', u'08a02000'], u'id': 179, u'method': u'mining.submit'}
+{u'result': True, u'id': 179, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c8fb', u'a6820000', u'64de8d2e', u'25d64445', u'0e4ae000'], u'id': 180, u'method': u'mining.submit'}
+{u'result': True, u'id': 180, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36c8fb', u'aa820000', u'64de8d2e', u'0d7b3c4f', u'0f3a6000'], u'id': 181, u'method': u'mining.submit'}
+{u'params': [u'36cb87', u'3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000', u'02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c', u'ffffffff035b21940000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29ccf38ff25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed8a2eba0cd6e3f3dbcbdeff98f11a2eab4185fecc1a57e0160473126a4ae021d700000000', [u'5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3', u'0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4', u'c62eff22352c3ea3e7b4a0c3bcd82d307306f0eb12637d4357990948712f93a0', u'f206777419c93b3fc7ebeadc91e1c2e63b0eabc7ea40322662396af8d4be0f15', u'e332d47969a09ed6e7dd320ffdc3b67e0b8d6f24c73a3a639d9c170d7e6b5f62', u'62b8de8e1e38784ff14a9d88e73c858e88f8a3f908e90999feb59a9e663898f8', u'815ad41dc58fc27635ad2f1a513c96b2a941748c81311061cc1868185af42b3c', u'16b65b0418f40f8240d698548b4ed7cb586b42d581adf7652d3cb79d7ef84811', u'faa7c2e466eeb311aa802c302e00cbe822f7e4ebc90fa37742a450800fa963c8', u'590814b7b3cb10f34111706b80b0ce4c1a687b5ed82ed12426662662843563ad', u'25898eabb2e863ea39b32c15c9356680ef4b0dd3705a3e4f7bd81004148c2e77', u'e27cc055bda4ed61db046cb63fe8450cb89d56513b8797efd3e3a4a0197704bf'], u'20000000', u'17055f5b', u'64de8d6a', False], u'id': None, u'method': u'mining.notify'}
+{u'result': True, u'id': 181, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36cb87', u'bb980000', u'64de8d6a', u'42dd48a9', u'0b04a000'], u'id': 182, u'method': u'mining.submit'}
+{u'result': True, u'id': 182, u'error': None}
+{u'params': [u'bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot', u'36cb87', u'c1980000', u'64de8d6a', u'dfa5995c', u'02b0c000'], u'id': 183, u'method': u'mining.submit'}
+{u'result': True, u'id': 183, u'error': None}

@@ -1,0 +1,307 @@
+{"id":37, "method":"mining.configure", "params":[["version-rolling"],{"version-rolling.mask":"1fffe000","version-rolling.min-bit-count":16}]}
+{"id":37,"error":null,"result":{"version-rolling":true,"version-rolling.mask":"1fffe000"}}
+{"id": 38, "method": "mining.subscribe", "params": ["Antminer S19 XP/Fri Nov 18 17:36:48 CST 2022", "e26e1928"]}
+{"id":38,"error":null,"result":[[["mining.notify","d6a0ad42"]],"d6a0ad42",4]}
+{"id": 39, "method": "mining.authorize", "params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "x"]}
+{"id":39,"error":null,"result":true}
+{"id":null,"method":"mining.set_difficulty","params":[16384]}
+{"id":null,"method":"mining.notify","params":["36beca","3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c","ffffffff038d7a930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c7c6fd425000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9edffbaebfe2e945cd3d672463660860a8d0c526a10f7d7ae058feb3aabc67dec7900000000",["5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3","0c447211c931882663daaf3c34b9ae298baa80a19f73ba68f12b5d1b7ff81db9","7fbff95846d971f0966e82a9e32a29a5f0833cc44f0131128e4492e065b21a64","0cf36013ecb0bb3ade3c301fb1935a6d9596ded0e9064a4e15cd88396e44f53e","4de4aef40b43c8259f548a2b0d6dccabf8e9967f90e66c7163b04acd6cbe2c3c","ce74fe4fda197ca78102674b3b14af2a0500d2250b79a547db35528f98d0d8fe","411b9371d3b3ed5d230c9ee3f78a0c430477d80939a33af5bbd132ee6bd9b410","9e357a68b69037d7db33fd8530e1f44dcb76ee0ffde0e7ef2c25fd0d39fc104a","55027821cafa97c059b152c31b4f4da67f651eddbd682d39530d395f7d62b43b","af0889b8250b24bcab9da067c15583fd2644291e2aed851296295212bcd426d6","14a72df0ef8e9e36ecf708e84ef9fc0ce3dc256fe4688c9f61da4c1485a6b0ef","1ad78e0ed3d599f0c4678445dccf96be6847f00461c0622c86341ab3844bfbe6"],"20000000","17055f5b","64de8c3e",false]}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "1721a3", "592f0000", "64de8c4f", "120e0005", "024a2000"], "id": 36, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "2b330000", "64de8c3e", "cf563a00", "05a4c000"], "id": 40, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "2d330000", "64de8c3e", "936b4590", "06398000"], "id": 41, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "2d330000", "64de8c3e", "7167ee4e", "0a986000"], "id": 42, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "2c330000", "64de8c3e", "cf937113", "0cf48000"], "id": 43, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "30330000", "64de8c3e", "1b5894ba", "00b00000"], "id": 44, "method": "mining.submit"}
+{"id":36,"result":null,"error":[21,"Job not found",""]}
+{"id":44,"error":null,"result":true}
+{"id":41,"error":null,"result":true}
+{"id":42,"error":null,"result":true}
+{"id":43,"error":null,"result":true}
+{"id":40,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "2e330000", "64de8c3e", "4e97b173", "03942000"], "id": 45, "method": "mining.submit"}
+{"id":45,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "2f330000", "64de8c3e", "30a028ae", "092b4000"], "id": 46, "method": "mining.submit"}
+{"id":46,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "33330000", "64de8c3e", "1204220c", "0286a000"], "id": 47, "method": "mining.submit"}
+{"id":47,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "33330000", "64de8c3e", "95327814", "072d0000"], "id": 48, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "33330000", "64de8c3e", "1a9f2841", "076ec000"], "id": 49, "method": "mining.submit"}
+{"id":48,"error":null,"result":true}
+{"id":49,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "31330000", "64de8c3e", "67faacc9", "0d14c000"], "id": 50, "method": "mining.submit"}
+{"id":50,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "36330000", "64de8c3e", "f0d76a54", "01fca000"], "id": 51, "method": "mining.submit"}
+{"id":51,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "36330000", "64de8c3e", "630a0926", "057ec000"], "id": 52, "method": "mining.submit"}
+{"id":52,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "37330000", "64de8c3e", "51248405", "018d6000"], "id": 53, "method": "mining.submit"}
+{"id":53,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "37330000", "64de8c3e", "72419ac2", "08438000"], "id": 54, "method": "mining.submit"}
+{"id":54,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "38330000", "64de8c3e", "d8201119", "09240000"], "id": 55, "method": "mining.submit"}
+{"id":55,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "38330000", "64de8c3e", "112363d0", "0f580000"], "id": 56, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "37330000", "64de8c3e", "c924430f", "0fe38000"], "id": 57, "method": "mining.submit"}
+{"id":56,"error":null,"result":true}
+{"id":57,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "3c330000", "64de8c3e", "910da84e", "006f6000"], "id": 58, "method": "mining.submit"}
+{"id":58,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "3b330000", "64de8c3e", "efde8965", "01446000"], "id": 59, "method": "mining.submit"}
+{"id":59,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "3c330000", "64de8c3e", "862dea10", "04844000"], "id": 60, "method": "mining.submit"}
+{"id":60,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "3b330000", "64de8c3e", "f9773da3", "0a2c4000"], "id": 61, "method": "mining.submit"}
+{"id":61,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "3c330000", "64de8c3e", "03ce4552", "0e400000"], "id": 62, "method": "mining.submit"}
+{"id":62,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "3f330000", "64de8c3e", "7a858ca0", "11b46000"], "id": 63, "method": "mining.submit"}
+{"id":63,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "42330000", "64de8c3e", "316d1423", "00eca000"], "id": 64, "method": "mining.submit"}
+{"id":64,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "42330000", "64de8c3e", "9f052765", "04804000"], "id": 65, "method": "mining.submit"}
+{"id":65,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "40330000", "64de8c3e", "f1174782", "054ae000"], "id": 66, "method": "mining.submit"}
+{"id":66,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "40330000", "64de8c3e", "2a03de8a", "1194a000"], "id": 67, "method": "mining.submit"}
+{"id":67,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "45330000", "64de8c3e", "061c8188", "067d6000"], "id": 68, "method": "mining.submit"}
+{"id":68,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "44330000", "64de8c3e", "d5c55eb9", "09818000"], "id": 69, "method": "mining.submit"}
+{"id":69,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "45330000", "64de8c3e", "ba50ce50", "11e88000"], "id": 70, "method": "mining.submit"}
+{"id":70,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "48330000", "64de8c3e", "f9014a70", "06874000"], "id": 71, "method": "mining.submit"}
+{"id":71,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "48330000", "64de8c3e", "37bf1a52", "10b6c000"], "id": 72, "method": "mining.submit"}
+{"id":72,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "48330000", "64de8c3e", "1d885103", "1308e000"], "id": 73, "method": "mining.submit"}
+{"id":73,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "49330000", "64de8c3e", "344c8a07", "041d6000"], "id": 74, "method": "mining.submit"}
+{"id":74,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "49330000", "64de8c3e", "1fae3679", "091de000"], "id": 75, "method": "mining.submit"}
+{"id":75,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4b330000", "64de8c3e", "c8db2a21", "09d6a000"], "id": 76, "method": "mining.submit"}
+{"id":76,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4b330000", "64de8c3e", "ffabf228", "1136c000"], "id": 77, "method": "mining.submit"}
+{"id":77,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4d330000", "64de8c3e", "98a5d54a", "043e8000"], "id": 78, "method": "mining.submit"}
+{"id":78,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4c330000", "64de8c3e", "83feb5d8", "0530a000"], "id": 79, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4e330000", "64de8c3e", "7d039688", "05c3c000"], "id": 80, "method": "mining.submit"}
+{"id":79,"error":null,"result":true}
+{"id":80,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4c330000", "64de8c3e", "48bf1a24", "09412000"], "id": 81, "method": "mining.submit"}
+{"id":81,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4c330000", "64de8c3e", "d1aa41b4", "09ef4000"], "id": 82, "method": "mining.submit"}
+{"id":82,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4c330000", "64de8c3e", "f3d2e698", "1110e000"], "id": 83, "method": "mining.submit"}
+{"id":83,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4e330000", "64de8c3e", "2f105984", "11fe2000"], "id": 84, "method": "mining.submit"}
+{"id":84,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "50330000", "64de8c3e", "150a853d", "05cea000"], "id": 85, "method": "mining.submit"}
+{"id":85,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4f330000", "64de8c3e", "f873b03b", "06bc2000"], "id": 86, "method": "mining.submit"}
+{"id":86,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "50330000", "64de8c3e", "7bf325b1", "07982000"], "id": 87, "method": "mining.submit"}
+{"id":87,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "51330000", "64de8c3e", "43988559", "0a658000"], "id": 88, "method": "mining.submit"}
+{"id":88,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "51330000", "64de8c3e", "10cf6855", "0cab6000"], "id": 89, "method": "mining.submit"}
+{"id":89,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "4f330000", "64de8c3e", "443a005b", "10604000"], "id": 90, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "50330000", "64de8c3e", "00a5822c", "10dba000"], "id": 91, "method": "mining.submit"}
+{"id":90,"error":null,"result":true}
+{"id":91,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "52330000", "64de8c3e", "8843b65f", "0648a000"], "id": 92, "method": "mining.submit"}
+{"id":92,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "52330000", "64de8c3e", "33560694", "0f80e000"], "id": 93, "method": "mining.submit"}
+{"id":93,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "55330000", "64de8c3e", "4530e042", "02512000"], "id": 94, "method": "mining.submit"}
+{"id":94,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "57330000", "64de8c3e", "c325e2de", "07a02000"], "id": 95, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "55330000", "64de8c3e", "a8637acd", "081c0000"], "id": 96, "method": "mining.submit"}
+{"id":95,"error":null,"result":true}
+{"id":96,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "57330000", "64de8c3e", "fc02082e", "0f6a0000"], "id": 97, "method": "mining.submit"}
+{"id":97,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "59330000", "64de8c3e", "05c3f45a", "00082000"], "id": 98, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36beca", "5a330000", "64de8c3e", "832c3300", "00812000"], "id": 99, "method": "mining.submit"}
+{"id":98,"error":null,"result":true}
+{"id":null,"method":"mining.notify","params":["36c151","3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c","ffffffff037ba0930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c182ade25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed28c351c0aaecb58975fc53bfffb8d92f866b6e67872633a17fa1704cb02da74700000000",["5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3","0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4","dc74d2b74bef4395269c379886f5d8e643d0f1b3b4820b4a3f449cd720aa6aef","b6d359610bd523b1152f48030e719f953e0545b1f4ec31d9527aaa5bb1efda71","1d5445a28521806f3c5793594a4dbd2a33c593f327a1eb91426d48e1fb989627","1cbe558a73ebdbae9a4763ed1645e87009e618d44e4be3eba1ef560eea83dc27","71a8169956a21139807530067657b3641c6b4ad502be96631b24ff845c47582d","2014fdc1095f05b8a99bc90b19963476a73708154738d7d474f76e56b461b64c","ea2e0adbbb7323e66156b90324f8005a86f8f75664ce62139eaa01240ad6665a","dcffde99ababc0a298cf723971e4d205909e443bbd59534f66765999bd82a7c9","3fa604f4c2bcc46165ab987da9f0ec7e7f8f4a75d581859ba3e2c30a5a3ce1b6","b22b0de4231d9cf834c835182c2146253b78c6779010dd699d73aa979a33254d"],"20000000","17055f5b","64de8c7a",false]}
+{"id":99,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "363f0000", "64de8c7a", "e3f17001", "048de000"], "id": 100, "method": "mining.submit"}
+{"id":100,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "373f0000", "64de8c7a", "11825e4e", "0a4e4000"], "id": 101, "method": "mining.submit"}
+{"id":101,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "393f0000", "64de8c7a", "85d1da56", "00a96000"], "id": 102, "method": "mining.submit"}
+{"id":102,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "393f0000", "64de8c7a", "d48afe54", "0c22c000"], "id": 103, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3a3f0000", "64de8c7a", "1c139459", "0c5e6000"], "id": 104, "method": "mining.submit"}
+{"id":103,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3a3f0000", "64de8c7a", "0034917e", "0d1dc000"], "id": 105, "method": "mining.submit"}
+{"id":104,"error":null,"result":true}
+{"id":105,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3a3f0000", "64de8c7a", "c04641c4", "0f746000"], "id": 106, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "393f0000", "64de8c7a", "9491d91e", "0f892000"], "id": 107, "method": "mining.submit"}
+{"id":106,"error":null,"result":true}
+{"id":107,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "393f0000", "64de8c7a", "9100b29a", "119cc000"], "id": 108, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3a3f0000", "64de8c7a", "8ffe005f", "11c34000"], "id": 109, "method": "mining.submit"}
+{"id":108,"error":null,"result":true}
+{"id":109,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3c3f0000", "64de8c7a", "b4bfc172", "02b4c000"], "id": 110, "method": "mining.submit"}
+{"id":110,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3b3f0000", "64de8c7a", "ed095abe", "04576000"], "id": 111, "method": "mining.submit"}
+{"id":111,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3d3f0000", "64de8c7a", "87862066", "05540000"], "id": 112, "method": "mining.submit"}
+{"id":112,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3d3f0000", "64de8c7a", "9f3d3475", "0965e000"], "id": 113, "method": "mining.submit"}
+{"id":113,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3b3f0000", "64de8c7a", "b56e911c", "0d3d2000"], "id": 114, "method": "mining.submit"}
+{"id":114,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3b3f0000", "64de8c7a", "01a6742b", "0e3ee000"], "id": 115, "method": "mining.submit"}
+{"id":115,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3c3f0000", "64de8c7a", "b127334f", "0fd22000"], "id": 116, "method": "mining.submit"}
+{"id":116,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3f3f0000", "64de8c7a", "6a90d590", "040f2000"], "id": 117, "method": "mining.submit"}
+{"id":117,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "403f0000", "64de8c7a", "c3690110", "0776c000"], "id": 118, "method": "mining.submit"}
+{"id":118,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "3f3f0000", "64de8c7a", "1832eaa8", "127e2000"], "id": 119, "method": "mining.submit"}
+{"id":119,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "413f0000", "64de8c7a", "41aa1e8e", "00376000"], "id": 120, "method": "mining.submit"}
+{"id":120,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "433f0000", "64de8c7a", "01eb523b", "01560000"], "id": 121, "method": "mining.submit"}
+{"id":121,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "433f0000", "64de8c7a", "0009221a", "08e86000"], "id": 122, "method": "mining.submit"}
+{"id":122,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "413f0000", "64de8c7a", "7df72640", "0f48c000"], "id": 123, "method": "mining.submit"}
+{"id":123,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "423f0000", "64de8c7a", "c4b6b6b0", "12f6e000"], "id": 124, "method": "mining.submit"}
+{"id":124,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "493f0000", "64de8c7a", "4525bd7c", "0beaa000"], "id": 125, "method": "mining.submit"}
+{"id":125,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "473f0000", "64de8c7a", "a22420c7", "0d3cc000"], "id": 126, "method": "mining.submit"}
+{"id":126,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "493f0000", "64de8c7a", "2acf8d0f", "0ec26000"], "id": 127, "method": "mining.submit"}
+{"id":127,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "483f0000", "64de8c7a", "b3e9240a", "1156e000"], "id": 128, "method": "mining.submit"}
+{"id":128,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "4a3f0000", "64de8c7a", "a9d77969", "03ac6000"], "id": 129, "method": "mining.submit"}
+{"id":129,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "4c3f0000", "64de8c7a", "c5659e23", "05450000"], "id": 130, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "4c3f0000", "64de8c7a", "53e09a37", "05598000"], "id": 131, "method": "mining.submit"}
+{"id":130,"error":null,"result":true}
+{"id":131,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "4b3f0000", "64de8c7a", "15315041", "08c54000"], "id": 132, "method": "mining.submit"}
+{"id":132,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "4a3f0000", "64de8c7a", "34b291c4", "0f14a000"], "id": 133, "method": "mining.submit"}
+{"id":133,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "4f3f0000", "64de8c7a", "65668268", "0dd78000"], "id": 134, "method": "mining.submit"}
+{"id":134,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "4d3f0000", "64de8c7a", "d216059e", "12eb6000"], "id": 135, "method": "mining.submit"}
+{"id":135,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "513f0000", "64de8c7a", "c09a702a", "01a9c000"], "id": 136, "method": "mining.submit"}
+{"id":136,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "503f0000", "64de8c7a", "f3b6e8a0", "07346000"], "id": 137, "method": "mining.submit"}
+{"id":137,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "523f0000", "64de8c7a", "5fc84503", "0f9c8000"], "id": 138, "method": "mining.submit"}
+{"id":138,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "513f0000", "64de8c7a", "d7ad4d64", "12738000"], "id": 139, "method": "mining.submit"}
+{"id":139,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "553f0000", "64de8c7a", "2b1a8719", "01b04000"], "id": 140, "method": "mining.submit"}
+{"id":140,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "543f0000", "64de8c7a", "c315f41e", "07df0000"], "id": 141, "method": "mining.submit"}
+{"id":141,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "543f0000", "64de8c7a", "39402900", "0bb4c000"], "id": 142, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "553f0000", "64de8c7a", "cabaa8bf", "0bfd2000"], "id": 143, "method": "mining.submit"}
+{"id":142,"error":null,"result":true}
+{"id":143,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "543f0000", "64de8c7a", "4094867d", "0dc4e000"], "id": 144, "method": "mining.submit"}
+{"id":144,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "553f0000", "64de8c7a", "271a3e7e", "1099e000"], "id": 145, "method": "mining.submit"}
+{"id":145,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "583f0000", "64de8c7a", "808fe61c", "01106000"], "id": 146, "method": "mining.submit"}
+{"id":146,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "583f0000", "64de8c7a", "a9c04a94", "0607a000"], "id": 147, "method": "mining.submit"}
+{"id":147,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "573f0000", "64de8c7a", "02f8a0db", "08936000"], "id": 148, "method": "mining.submit"}
+{"id":148,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "583f0000", "64de8c7a", "5cee7626", "0c268000"], "id": 149, "method": "mining.submit"}
+{"id":149,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "573f0000", "64de8c7a", "67442a85", "0ddae000"], "id": 150, "method": "mining.submit"}
+{"id":150,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "573f0000", "64de8c7a", "09ddc19c", "128c2000"], "id": 151, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "563f0000", "64de8c7a", "8f86550c", "12d16000"], "id": 152, "method": "mining.submit"}
+{"id":151,"error":null,"result":true}
+{"id":152,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "5b3f0000", "64de8c7a", "10053154", "04682000"], "id": 153, "method": "mining.submit"}
+{"id":153,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "5b3f0000", "64de8c7a", "62322fa7", "0699e000"], "id": 154, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "5b3f0000", "64de8c7a", "747524c8", "0706e000"], "id": 155, "method": "mining.submit"}
+{"id":154,"error":null,"result":true}
+{"id":155,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "5a3f0000", "64de8c7a", "84991dd1", "0b478000"], "id": 156, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "5b3f0000", "64de8c7a", "897e0827", "0bf00000"], "id": 157, "method": "mining.submit"}
+{"id":156,"error":null,"result":true}
+{"id":157,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "5b3f0000", "64de8c7a", "bf810c37", "0d4c2000"], "id": 158, "method": "mining.submit"}
+{"id":158,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "5e3f0000", "64de8c7a", "9c878463", "00948000"], "id": 159, "method": "mining.submit"}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c151", "5c3f0000", "64de8c7a", "a2704142", "01416000"], "id": 160, "method": "mining.submit"}
+{"id":159,"error":null,"result":true}
+{"id":160,"error":null,"result":true}
+{"id":null,"method":"mining.set_difficulty","params":[262144]}
+{"id":null,"method":"mining.notify","params":["36c157","3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c","ffffffff037ba0930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c182ade25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed28c351c0aaecb58975fc53bfffb8d92f866b6e67872633a17fa1704cb02da74700000000",["5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3","0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4","dc74d2b74bef4395269c379886f5d8e643d0f1b3b4820b4a3f449cd720aa6aef","b6d359610bd523b1152f48030e719f953e0545b1f4ec31d9527aaa5bb1efda71","1d5445a28521806f3c5793594a4dbd2a33c593f327a1eb91426d48e1fb989627","1cbe558a73ebdbae9a4763ed1645e87009e618d44e4be3eba1ef560eea83dc27","71a8169956a21139807530067657b3641c6b4ad502be96631b24ff845c47582d","2014fdc1095f05b8a99bc90b19963476a73708154738d7d474f76e56b461b64c","ea2e0adbbb7323e66156b90324f8005a86f8f75664ce62139eaa01240ad6665a","dcffde99ababc0a298cf723971e4d205909e443bbd59534f66765999bd82a7c9","3fa604f4c2bcc46165ab987da9f0ec7e7f8f4a75d581859ba3e2c30a5a3ce1b6","b22b0de4231d9cf834c835182c2146253b78c6779010dd699d73aa979a33254d"],"20000000","17055f5b","64de8c7a",false]}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c157", "8a490000", "64de8c7a", "249c258f", "01c18000"], "id": 161, "method": "mining.submit"}
+{"id":161,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c157", "93490000", "64de8c7a", "7c4df960", "04a08000"], "id": 162, "method": "mining.submit"}
+{"id":162,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c157", "96490000", "64de8c7a", "9423d842", "0f75e000"], "id": 163, "method": "mining.submit"}
+{"id":163,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c157", "99490000", "64de8c7a", "e69e1a37", "00596000"], "id": 164, "method": "mining.submit"}
+{"id":164,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c157", "a8490000", "64de8c7a", "463d4d11", "0d69e000"], "id": 165, "method": "mining.submit"}
+{"id":165,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c157", "a7490000", "64de8c7a", "23a79084", "12056000"], "id": 166, "method": "mining.submit"}
+{"id":166,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c157", "ae490000", "64de8c7a", "60a13c9f", "0017e000"], "id": 167, "method": "mining.submit"}
+{"id":null,"method":"mining.notify","params":["36c3df","3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c","ffffffff037dd8930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c0a88ec25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed4617b6bc6681a91d7c497b83410b17affcdbb56df2b345238af6b6c0fd45fde000000000",["5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3","0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4","7f24b32c0cf385efd99c971abe42df5bf374b3cefd4468dd449bbb10800671f9","db74bb43475af579ef9397f1edaf78e658fd71b039f916d308cb365d1e531944","aff4d80a4f5302316da010884d8d0ee08595c8d673ad0fcb3d3fbb816c629438","e8f2d20eacd5cf5eef5cd3b857a50521064dcf1a543c5da754be0548a6e6ca10","64fc107ea4b29c631a9e06ae5a24b76f7aed8d6c56299ad552e75ff4733f56f2","1c7e51eee50bf35775f8858a0f850a9bcfabc9cacdcb61e31f9c9deb49d3c5dd","0001864ac4c8951e3b9fa9df0397f1f34ac1c7df7a89b80cd533dd3dc0e20256","6569d1fa1967fc79af7e9b4473b5870fc48a2cdab68a0691364fd03479c89588","fb9fa3046dfc316b516533c067af4e79c9e6d6f7f2a1de1300b9fc913819b8b5","ecd8449c7882a932f08091f348d3ddaf79c32e4dbd8daccb32ffb631daa3cf0c"],"20000000","17055f5b","64de8cb6",false]}
+{"id":167,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c3df", "91550000", "64de8cb6", "195dc8c2", "03720000"], "id": 168, "method": "mining.submit"}
+{"id":168,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c3df", "9d550000", "64de8cb6", "1920fb2e", "07e86000"], "id": 169, "method": "mining.submit"}
+{"id":169,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c3df", "a2550000", "64de8cb6", "bc52f19c", "0f7aa000"], "id": 170, "method": "mining.submit"}
+{"id":170,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c3df", "a4550000", "64de8cb6", "88019a35", "07b78000"], "id": 171, "method": "mining.submit"}
+{"id":171,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c3df", "b6550000", "64de8cb6", "f810e03c", "09066000"], "id": 172, "method": "mining.submit"}
+{"id":172,"error":null,"result":true}
+{"id":null,"method":"mining.set_difficulty","params":[524288]}
+{"id":null,"method":"mining.notify","params":["36c3e6","3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c","ffffffff037dd8930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c0a88ec25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed4617b6bc6681a91d7c497b83410b17affcdbb56df2b345238af6b6c0fd45fde000000000",["5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3","0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4","7f24b32c0cf385efd99c971abe42df5bf374b3cefd4468dd449bbb10800671f9","db74bb43475af579ef9397f1edaf78e658fd71b039f916d308cb365d1e531944","aff4d80a4f5302316da010884d8d0ee08595c8d673ad0fcb3d3fbb816c629438","e8f2d20eacd5cf5eef5cd3b857a50521064dcf1a543c5da754be0548a6e6ca10","64fc107ea4b29c631a9e06ae5a24b76f7aed8d6c56299ad552e75ff4733f56f2","1c7e51eee50bf35775f8858a0f850a9bcfabc9cacdcb61e31f9c9deb49d3c5dd","0001864ac4c8951e3b9fa9df0397f1f34ac1c7df7a89b80cd533dd3dc0e20256","6569d1fa1967fc79af7e9b4473b5870fc48a2cdab68a0691364fd03479c89588","fb9fa3046dfc316b516533c067af4e79c9e6d6f7f2a1de1300b9fc913819b8b5","ecd8449c7882a932f08091f348d3ddaf79c32e4dbd8daccb32ffb631daa3cf0c"],"20000000","17055f5b","64de8cb6",false]}
+{"id":null,"method":"mining.notify","params":["36c670","3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c","ffffffff03d7f6930000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c0b51f425000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed382fa2830a3d23e680c1266ae83847f6e2181c0b2bd088eadcc585a4ad36101400000000",["5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3","0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4","7a6cb3bd8d4af128e1fda0ae9f413e95f8cf1fe4c4096b5893c2f50cbbc8a7be","408845bc009bfb680d648782ade7fe88974e149f2779c29f9c1cb772eee4f071","d79640a86a770e301fba61296ae6c4fedd1ce15c60af2de51f91c0394171a661","8dea617ac6a8647111d5cc0adcc830f5264828388f990477a10fc45b42cac179","87725932ec4be94fb2a8da9d5864053eece76e41e4c468c1b2d223914d3dd0fa","ae37540540078e6e4dc8c9a0cf983d6115f35219db995ae55093bf2a23b104f2","b9be45524585131702e0fba99188feb81d49dd0341c67b007066f6a391222a25","15a4b20ebb7bd7d7cbdbb4b4b84f0a92d1b930b958cf9da5f51f6ea3ae1d3c9a","d3619f04a339ed6e94eb08a7f94f2d0a9a47f1630fde64424da5dc27c00c1eb2","459ceb0b45e5842a5b42b7da93b68f04c12610d1a5ec3d4094191cbcfe8cc190"],"20000000","17055f5b","64de8cf2",false]}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c670", "276c0000", "64de8cf2", "419bb5b8", "0f346000"], "id": 173, "method": "mining.submit"}
+{"id":173,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c670", "2d6c0000", "64de8cf2", "02565e00", "0dd60000"], "id": 174, "method": "mining.submit"}
+{"id":174,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c670", "2d6c0000", "64de8cf2", "c0e7196a", "0fa50000"], "id": 175, "method": "mining.submit"}
+{"id":175,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c670", "2e6c0000", "64de8cf2", "2c9751cf", "01cc6000"], "id": 176, "method": "mining.submit"}
+{"id":176,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c670", "2f6c0000", "64de8cf2", "946fa097", "03d76000"], "id": 177, "method": "mining.submit"}
+{"id":177,"error":null,"result":true}
+{"id":null,"method":"mining.notify","params":["36c8fb","3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c","ffffffff03830e940000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29c6763fa25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed7c2fee0d48dcc5c768b9fa088df62cf3da5545514fb4924e4c3d9d0a3cc5044900000000",["5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3","0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4","7a6cb3bd8d4af128e1fda0ae9f413e95f8cf1fe4c4096b5893c2f50cbbc8a7be","408845bc009bfb680d648782ade7fe88974e149f2779c29f9c1cb772eee4f071","5eb50c88b9eeef55078850ff7d87ff16357b1be1aa9565f2f1f9453651ff2cab","967add0069adffe920bd32fc401aa968acd0fce0f7c61803f8569cd453d16edc","d0df3371407798a3924942d8456b7c741d385daaaa82e5b7e25d49a151b4425a","0853f30717558aa7bb5a78446e6e1789d208016b58f384b0b0c07c5afcdd0bbb","596001215badffa1cfa4d84d78dacd7b64937e3dff1179361480fb833aef0cb5","033aaf91dede2dae0ce3ba0d2667c016ebd7b5219aea750654df616a72a01d56","def42a31998771df0ae7083edc24f953b19b78888c2f880cd7add06afe86f103","6e77e8babf50ee0d093969a6e8a1965ab633fa9baa839555ee1119385e28f17b"],"20000000","17055f5b","64de8d2e",false]}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c8fb", "67820000", "64de8d2e", "e8c95010", "08dcc000"], "id": 178, "method": "mining.submit"}
+{"id":178,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c8fb", "7e820000", "64de8d2e", "80c354b7", "08a02000"], "id": 179, "method": "mining.submit"}
+{"id":179,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c8fb", "a6820000", "64de8d2e", "25d64445", "0e4ae000"], "id": 180, "method": "mining.submit"}
+{"id":180,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36c8fb", "aa820000", "64de8d2e", "0d7b3c4f", "0f3a6000"], "id": 181, "method": "mining.submit"}
+{"id":null,"method":"mining.notify","params":["36cb87","3e7d0c03d181b368ba00b10933c047e0509875e400000df10000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff190358430c5c7075626c69632d706f6f6c5c","ffffffff035b21940000000000160014296710f1eaa109c7cbe47076e177e4bee3a5a29ccf38ff25000000001600140587968c66c3c209070409edc88c95d66af586af0000000000000000266a24aa21a9ed8a2eba0cd6e3f3dbcbdeff98f11a2eab4185fecc1a57e0160473126a4ae021d700000000",["5631a32c1fb75e5cbc5113bea9ae1a4247899e6fc5d2fecc07b3693ef347f5c3","0f1e1935f96192e0820a4a75ca21abbea4bd2fa39bc2208df3615f4964b82ad4","c62eff22352c3ea3e7b4a0c3bcd82d307306f0eb12637d4357990948712f93a0","f206777419c93b3fc7ebeadc91e1c2e63b0eabc7ea40322662396af8d4be0f15","e332d47969a09ed6e7dd320ffdc3b67e0b8d6f24c73a3a639d9c170d7e6b5f62","62b8de8e1e38784ff14a9d88e73c858e88f8a3f908e90999feb59a9e663898f8","815ad41dc58fc27635ad2f1a513c96b2a941748c81311061cc1868185af42b3c","16b65b0418f40f8240d698548b4ed7cb586b42d581adf7652d3cb79d7ef84811","faa7c2e466eeb311aa802c302e00cbe822f7e4ebc90fa37742a450800fa963c8","590814b7b3cb10f34111706b80b0ce4c1a687b5ed82ed12426662662843563ad","25898eabb2e863ea39b32c15c9356680ef4b0dd3705a3e4f7bd81004148c2e77","e27cc055bda4ed61db046cb63fe8450cb89d56513b8797efd3e3a4a0197704bf"],"20000000","17055f5b","64de8d6a",false]}
+{"id":181,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36cb87", "bb980000", "64de8d6a", "42dd48a9", "0b04a000"], "id": 182, "method": "mining.submit"}
+{"id":182,"error":null,"result":true}
+{"params": ["bc1qqkredrrxc0pqjpcyp8ku3ry46e40tp40zrf0k0.skot", "36cb87", "c1980000", "64de8d6a", "dfa5995c", "02b0c000"], "id": 183, "method": "mining.submit"}
+{"id":183,"error":null,"result":true}
